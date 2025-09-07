@@ -1,6 +1,5 @@
 # cloud_practitioner_restart_program
 ## Program Outline
-- [MODULE 1: INTRODUCTION TO AWS](#module-1-introduction to aws)
 ### Module 1: Introduction to AWS
 - [What is IT?](#what-is-IT)
 - [What is cloud computing?](#what-is-cloud-computing)
@@ -11,13 +10,16 @@
   - [Reliability](#reliability)
   - [Performance Efficiency](#performance-efficiency)
   - [Cost Optimization](#cost-optimization)
-
 - [AWS Billing and Cost Management](#aws-billing-and-cost-management)
 
-  - 
-    - [What is the Internet? ](#what-is-the-internet)
-    - [The Network Edge ](#the-network-edge)
 ### Module 2: AWS Compute Services
+- [Amazon EC2](#amazon-ec2)
+- [AWS Lambda](#aws-lambda)
+- [AWS ECR](#aws-ecr)
+- [AWS ECS](#aws-ecs)
+- [Amazon Eks](#amazon-eks)
+- [AWS Auto Scaling](#aws-auto-scaling)
+
 ### Module 3: AWS Storage Services
 ### Module 4: AWS Database and Analytics services
 ### Module 5: AWS Networking and Content Delivery services
