@@ -46,7 +46,9 @@
   - [Application Load Balancing](#applicatio-load-balancing)
   - [Network Load Balancing](#network-load-balancing)
   - [Amazon API Gateway](#amazon-ai-gateway)
+  
 ### Module 6: AWS Security services
+
 ### Module 7: Management Tools
 ### Module 8: AWS Application & Migration Services
 - Clone this repo
