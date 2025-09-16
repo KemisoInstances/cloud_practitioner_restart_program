@@ -32,10 +32,10 @@
 
 
 # AWS Shared Responsibility Model
-    - [What is the Shared Responsibility Model?](#what-is-the-shared-responsibility-model)
-    - [AWS Responsibilities: **Security *of* the Cloud**](#aws-responsibilities-security-of-the-cloud)
-    - [Customer Responsibilities: **Security *in* the Cloud**](#customer-responsibilities-security-in-the-cloud)
-    - [Example Responsibilities for Different AWS Services](#example-responsibilities-for-different-aws-services)
+- [What is the Shared Responsibility Model?](#what-is-the-shared-responsibility-model)
+- [AWS Responsibilities: **Security *of* the Cloud**](#aws-responsibilities-security-of-the-cloud)
+- [Customer Responsibilities: **Security *in* the Cloud**](#customer-responsibilities-security-in-the-cloud)
+- [Example Responsibilities for Different AWS Services](#example-responsibilities-for-different-aws-services)
     
 
 # Cloud Financial Management
