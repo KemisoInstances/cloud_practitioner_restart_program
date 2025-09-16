@@ -59,7 +59,18 @@
 
 
 
-## What is Cloud Computing?
+# IT Infrastructure
+
+## What is IT Infrastructure
+* The combination of hardware, software, network connectivity and human resources that allow an organisation to deliver information technology services to people within organisations.
+
+## Components that make up IT Infrastructure
+* Hardware
+* Software
+*Network connectivity**
+*Human Resources**
+
+
 
 Cloud computing is the on-demand delivery of compute power, database storage, applications, and other IT resources through a cloud services platform with pay-as-you-go pricing. It provides:
 
