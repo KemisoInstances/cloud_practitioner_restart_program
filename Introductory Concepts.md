@@ -56,10 +56,13 @@
  - [Enterprise](#enterprise)
  - [AWS Savings Plan](#aws-savings-plan)
 
+</br></br>
 
+> [!NOTES]</br>
 
+😄😄😄😄😄😄😄😄😄😄😄😄😄😄😄😄 😄😄 😄😄 😄😄 😄😄 😄😄 😄😄 😄😄 😄😄 😄😄 
 
-# IT Infrastructure
+# IT Infrastructure😄😄 
 
 ## What is IT Infrastructure
 * The combination of hardware, software, network connectivity and human resources that allow an organisation to deliver information technology services to people within organisations.
@@ -70,14 +73,85 @@
 * Network connectivity
 * Human Resources
 
- - Hardware
-   Physical components that make up a computer system.
-   CPU, memory, motherboard, network card
-   <img width="141" height="113" alt="image" src="https://github.com/user-attachments/assets/08537c28-c52c-4a93-afa4-68468825f792" />
+**Hardware**
+* Physical components that make up a computer system.
+  * CPU, memory, motherboard, network card
+    
+<img width="600" height="375" alt="image" src="https://github.com/user-attachments/assets/feb54807-40f1-4198-a78b-fcdee4661b14" />
+    
+**Software**
+* Programs that direct the operation of a computer, as well as documentation giving instructions on how to use them
+* A set of instructions or commands that tell a computer what to do.
+  * Operating Systems:
+    * Microsoft Windows
+    * Linux
+    * MacOS
+   
+  * Application Software (programs for specific user tasks):
+    * Microsoft Office (Word, Excel, Powerpoint
+    * Web browsers (Google Chrome, Firefox, Safari)
+    * Multimedia (VLC Media Player, Spotify, Adobe Photoshop)
+    * Communication (Gmail, WhatsApp, Zoom)
+  
+  * Systems Softwares e.g Antivirus
 
- - Software
- - Network Connectivity
- - Human Resources
+**Network Connectivity**
+* The ability of devices to connect and communicate with each other
+  * Networking hubs, switches, routers, bridges
+
+<img width="318" height="159" alt="image" src="https://github.com/user-attachments/assets/aaad42bb-b14b-4ca7-85b3-d4facd18cb52" />
+
+
+**Human Resources**
+ * Refers to people in charge of parts of IT infrastructure.
+ * They look at an organisation’s needs and determine what hardware, and software will do the job.
+ * They can either buy an existing solution or develop a solution from scratch.
+  * Developers, system administrators, network administrators
+    
+
+🤫🤫🤫🤫🤫🤫🤫🤫🤫🤫🤫🤫🤫🤫🤫🤫🤫🤫🤫🤫🤫🤫🤫🤫🤫🤫🤫🤫🤫🤫🤫🤫
+# Cloud Computing🤫🤫
+
+## What is Cloud Computing
+* Cloud computing is the on-demand delivery of compute power, database storage, applications, and other IT resources
+* A cloud services platform such as Amazon Web Services owns and maintains the network-connected hardware required for these application services, while you provision and use what you need via a web application.
+
+## Benefits of Cloud Computing
+* Cost-Effectiveness: pay as you go/Pay for what you use
+* Elasticity: the ability to scale out and scale in when needed
+* Agility: rapidly develop, test, and launch software applications
+* Deploy Globally in Minutes: With just a few clicks, you can quickly deploy your application to different locations and enhance the experience of your users with reduced latency.
+
+## Types of Cloud Computing
+*  Infrastructure as a Service (IaaS) - Full control of your infrastructure without the maintenance and operating costs of the servers. IaaS provides access to servers, storage, networking, and operating systems.
+* Platform as a Service (PaaS) - In this model, you can focus on the deployment and management of your applications. PaaS eliminates the need to manage the underlying infrastructure.
+* Software as a Service (SaaS) - The software is ready to be used and operated by the service provider. SaaS is also known as an end-user application.
+
+
+
+- [Benefits of Cloud Computing ](#benefits-of-cloud-computing)
+- [Types of Cloud Computing](#types-of-cloud-computing) 
+- [Cloud Computing Deployment Models](#cloud-computing-deployment-models)
+- [Cloud Infrastructure vs On-Premises Infrastructure](#cloud-infrastructure-vs-on-premises-infrastructure)
+Cloud computing is the on-demand delivery of compute power, 
+database storage, applications, and other IT resources
+ ▷ Through a cloud services platform with pay-as-you-go pricing
+ ▷ You can provision exactly the right type and size of computing 
+resources you need
+ ▷ You can access as many resources as you need, almost 
+instantly
+ ▷ Cloud computing provides a simple way to access servers, 
+storage, databases and a broad set of application services 
+over the internet. 
+▷ A cloud services platform such as Amazon Web Services owns 
+and maintains the network-connected hardware required for 
+these application services, while you provision and use what 
+you need via a web application.
+
+
+
+
+
 
 Cloud computing is the on-demand delivery of compute power, database storage, applications, and other IT resources through a cloud services platform with pay-as-you-go pricing. It provides:
 
