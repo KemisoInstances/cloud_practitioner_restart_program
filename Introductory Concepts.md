@@ -78,7 +78,8 @@
   * CPU, memory, motherboard, network card
     
 <img width="600" height="375" alt="image" src="https://github.com/user-attachments/assets/feb54807-40f1-4198-a78b-fcdee4661b14" />
-    
+
+</br></br>
 **Software**
 * Programs that direct the operation of a computer, as well as documentation giving instructions on how to use them
 * A set of instructions or commands that tell a computer what to do.
@@ -101,7 +102,7 @@
 
 <img width="318" height="159" alt="image" src="https://github.com/user-attachments/assets/aaad42bb-b14b-4ca7-85b3-d4facd18cb52" />
 
-
+</br></br>
 **Human Resources**
  * Refers to people in charge of parts of IT infrastructure.
  * They look at an organisation’s needs and determine what hardware, and software will do the job.
@@ -123,37 +124,20 @@
 * Deploy Globally in Minutes: With just a few clicks, you can quickly deploy your application to different locations and enhance the experience of your users with reduced latency.
 
 ## Types of Cloud Computing
-*  Infrastructure as a Service (IaaS) - Full control of your infrastructure without the maintenance and operating costs of the servers. IaaS provides access to servers, storage, networking, and operating systems.
-* Platform as a Service (PaaS) - In this model, you can focus on the deployment and management of your applications. PaaS eliminates the need to manage the underlying infrastructure.
-* Software as a Service (SaaS) - The software is ready to be used and operated by the service provider. SaaS is also known as an end-user application.
+-  **Infrastructure as a Service (IaaS)** - Full control of your infrastructure without the maintenance and operating costs of the servers. IaaS provides access to servers, storage, networking, and operating systems.
+</br></br>
+- **Platform as a Service (PaaS)** - In this model, you can focus on the deployment and management of your applications. PaaS eliminates the need to manage the underlying infrastructure.
+</br></br>
+- **Software as a Service (SaaS)** - The software is ready to be used and operated by the service provider. SaaS is also known as an end-user application.
 
+## Cloud Computing Deployment Models
 
 
 - [Benefits of Cloud Computing ](#benefits-of-cloud-computing)
 - [Types of Cloud Computing](#types-of-cloud-computing) 
 - [Cloud Computing Deployment Models](#cloud-computing-deployment-models)
 - [Cloud Infrastructure vs On-Premises Infrastructure](#cloud-infrastructure-vs-on-premises-infrastructure)
-Cloud computing is the on-demand delivery of compute power, 
-database storage, applications, and other IT resources
- ▷ Through a cloud services platform with pay-as-you-go pricing
- ▷ You can provision exactly the right type and size of computing 
-resources you need
- ▷ You can access as many resources as you need, almost 
-instantly
- ▷ Cloud computing provides a simple way to access servers, 
-storage, databases and a broad set of application services 
-over the internet. 
-▷ A cloud services platform such as Amazon Web Services owns 
-and maintains the network-connected hardware required for 
-these application services, while you provision and use what 
-you need via a web application.
 
-
-
-
-
-
-Cloud computing is the on-demand delivery of compute power, database storage, applications, and other IT resources through a cloud services platform with pay-as-you-go pricing. It provides:
 
 
 
@@ -161,18 +145,18 @@ Cloud computing is the on-demand delivery of compute power, database storage, ap
 
 | **Private Cloud**                                                        | **Public Cloud**                                                                                         | **Hybrid Cloud**                                                             |
 | ------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
-| Cloud services used by a single organization, not exposed to the public. | Cloud resources owned and operated by a third-party cloud service provider, delivered over the Internet. | Keep some servers on-premises and extend some capabilities to the cloud.     |
-| Complete control over data, security, and compliance.                    | Cost-effective as infrastructure is shared among multiple users.                                         | Allows data and applications to be shared between private and public clouds. |
-| Security for sensitive applications, ideal for critical workloads.       | Suitable for less sensitive workloads that require high scalability and availability.                    | Offers flexibility, security, and scalability for different use cases.       |
-| Meet specific business needs and compliance requirements.                | No maintenance required as the cloud provider manages the infrastructure.                                | Provides business continuity, disaster recovery, and data backup solutions.  |
+| The deployment of resources on-premises, using virtualization and resource management tools, is sometimes **called the private cloud** |  the cloud provider makes resources available to the public through the internet. While the resources vary depending on the provider, it usually includes storage capabilities, applications, or virtual machines. | A hybrid deployment is a way to connect infrastructure and applications between cloud-based resources and existing resources that are not located in the cloud |
+|  On-premises deployment doesn’t provide many of the benefits of cloud computing but is sometimes sought for its ability to provide dedicated resources. |Applications in the cloud have either been created in the cloud or have been migrated from an existing infrastructure to take advantage of the benefits of cloud computing.|Keep some servers on-premises and extend some capabilities to the Cloud.|
 
-### The Five Characteristics of Cloud Computing
 
-1. **On-demand self-service**: Provision computing resources as needed automatically.
-2. **Broad network access**: Access cloud resources over the network using standard mechanisms.
-3. **Resource pooling**: Providers serve multiple customers using a multi-tenant model.
-4. **Rapid elasticity**: Resources can be scaled up or down rapidly.
-5. **Measured service**: Resource usage is monitored and billed accordingly.
+### Cloud Infrastructure vs On-Premises Infrastructure
+
+1. **Public** - No upfront Investment, Low ongoing costs, Focus on innovation, Flexible capacity, Speed and agility, Global reach on demand
+2. **Private** - Large initial purchase, Labour, patches, and upgrade cycles, System Administration, Fixed capacity, Long procurement and setup, Limited geographic regions
+</br>
+**What can you do in the cloud?** : Application hosting, Backup and Storage, Content delivery, Websites, Enterprise IT, Database
+ 
+
 
 ### Six Advantages of Cloud Computing
 
