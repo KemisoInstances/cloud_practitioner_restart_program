@@ -19,6 +19,18 @@
     - [How to Choose an AWS Region?](#how-to-choose-an-aws-region)
     - [AWS Availability Zones (AZs)](#aws-availability-zones-azs)
     - [AWS Points of Presence (Edge Locations)](#aws-points-of-presence-edge-locations)
+
+# AWS Well Architected Framework
+ - [Cloud Design Princiles](#cloud-design-principles)
+ - [Architected Framework Pillars](#architected-framework-pillars)
+    - [Operational Excellence](#operational-excellence)
+    - [Performance Efficiency](#performance-efficiency)
+    - [Reliability](#reliability)
+    - [Sustainability](#sustainability)
+    - [Security](#security)
+    - [Cost Optimisation](#cost-optimisation)
+
+
   - [AWS Shared Responsibility Model](#aws-shared-responsibility-model)
     - [What is the Shared Responsibility Model?](#what-is-the-shared-responsibility-model)
     - [AWS Responsibilities: **Security *of* the Cloud**](#aws-responsibilities-security-of-the-cloud)
