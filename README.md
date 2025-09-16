@@ -55,6 +55,15 @@
 - Install the requirements
 - Run the app
 
+
+
+## Module 1: Introduction to AWS
+
+### What is IT Infrastructure?
+An IT Infrastructure is a combination of hardware, software, network connectivity and human resources to allow organization to deliver information technology (IT) services to people within the organizations. 
+
+
+
 ### Example Commands
 
 - `git clone <repo-url>`
