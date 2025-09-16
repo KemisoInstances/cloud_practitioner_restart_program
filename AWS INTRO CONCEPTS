@@ -31,12 +31,22 @@
     - [Cost Optimisation](#cost-optimisation)
 
 
-  - [AWS Shared Responsibility Model](#aws-shared-responsibility-model)
+# AWS Shared Responsibility Model
     - [What is the Shared Responsibility Model?](#what-is-the-shared-responsibility-model)
     - [AWS Responsibilities: **Security *of* the Cloud**](#aws-responsibilities-security-of-the-cloud)
     - [Customer Responsibilities: **Security *in* the Cloud**](#customer-responsibilities-security-in-the-cloud)
     - [Example Responsibilities for Different AWS Services](#example-responsibilities-for-different-aws-services)
-    - [Summary](#summary)
+    
+
+# Cloud Financial Management
+ - [AWS Total Cost of Ownership](#aws-total-cost-of-ownership)
+ - [AWS Pricing Calculator](#aws-pricing-calculator)
+ - [AWS Cost Allocation Tags](#aws-cost-allocation-tags)
+ - [AWS Cost and Usage Reports](#aws-cost-and-usage-reports)
+ - [AWS Cost Explorer](#aws-cost-explorer)
+ - [AWS Budgets](#aws-budgets)
+ - [AWS Savings Plan](#aws-savings-plan)
+
 
 ## What is Cloud Computing?
 
