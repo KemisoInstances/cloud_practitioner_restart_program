@@ -63,10 +63,7 @@
 
 Cloud computing is the on-demand delivery of compute power, database storage, applications, and other IT resources through a cloud services platform with pay-as-you-go pricing. It provides:
 
-- Provisioning of exactly the right type and size of computing resources.
-- Access to as many resources as needed, almost instantly.
-- A simple way to access servers, storage, databases, and a set of application services.
-- Amazon Web Services (AWS) owns and maintains the network-connected hardware, while you provision and use what you need via a web application.
+
 
 ### The Deployment Models of the Cloud
 
