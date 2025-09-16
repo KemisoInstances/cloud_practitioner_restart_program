@@ -122,6 +122,10 @@
 * Elasticity: the ability to scale out and scale in when needed
 * Agility: rapidly develop, test, and launch software applications
 * Deploy Globally in Minutes: With just a few clicks, you can quickly deploy your application to different locations and enhance the experience of your users with reduced latency.
+* Stop spending money running and maintaining data centers – Focus on projects that differentiate your business, not the infrastructure.
+* Stop guessing capacity – Eliminate guessing about your infrastructure capacity needs. When you make a capacity decision prior to deploying an application, you often end up either sitting on expensive idle resources or dealing with limited capacity.
+* Benefit from massive economies of scale – By using cloud computing, you can achieve a lower variable cost than you can get on your own
+* Trade fixed expense for variable expense - Instead of having to invest heavily in data centers and servers before you know how you’re going to use them, you can pay only when you consume computing resources, and pay only for how much you consume
 
 ## Types of Cloud Computing
 -  **Infrastructure as a Service (IaaS)** - Full control of your infrastructure without the maintenance and operating costs of the servers. IaaS provides access to servers, storage, networking, and operating systems.
@@ -129,15 +133,6 @@
 - **Platform as a Service (PaaS)** - In this model, you can focus on the deployment and management of your applications. PaaS eliminates the need to manage the underlying infrastructure.
 </br></br>
 - **Software as a Service (SaaS)** - The software is ready to be used and operated by the service provider. SaaS is also known as an end-user application.
-
-## Cloud Computing Deployment Models
-
-
-- [Benefits of Cloud Computing ](#benefits-of-cloud-computing)
-- [Types of Cloud Computing](#types-of-cloud-computing) 
-- [Cloud Computing Deployment Models](#cloud-computing-deployment-models)
-- [Cloud Infrastructure vs On-Premises Infrastructure](#cloud-infrastructure-vs-on-premises-infrastructure)
-
 
 
 
@@ -154,32 +149,9 @@
 1. **Public** - No upfront Investment, Low ongoing costs, Focus on innovation, Flexible capacity, Speed and agility, Global reach on demand
 2. **Private** - Large initial purchase, Labour, patches, and upgrade cycles, System Administration, Fixed capacity, Long procurement and setup, Limited geographic regions
 </br>
-**What can you do in the cloud?** : Application hosting, Backup and Storage, Content delivery, Websites, Enterprise IT, Database
+***What can you do in the cloud?***
+* Application hosting, Backup and Storage, Content delivery, Websites, Enterprise IT, Database
  
-
-
-### Six Advantages of Cloud Computing
-
-1. **Cost Savings**: Pay only for the computing power, storage, and other resources you use.
-2. **Speed and Agility**: Quickly deploy services and resources.
-3. **Scalability**: Easily scale resources up or down as needed.
-4. **High Availability**: Highly available architecture for business continuity.
-5. **Global Reach**: Access services from any geographical region.
-6. **Security**: AWS provides robust security capabilities to protect your data.
-
-### Problems Solved by the Cloud
-
-- **High upfront costs**: Replaced by a pay-as-you-go model.
-- **Scalability limitations**: Dynamic scaling to meet business demands.
-- **Limited infrastructure availability**: Global infrastructure to support workloads.
-
-### Types of Cloud Computing
-
-| **Infrastructure as a Service (IaaS)**                                      | **Platform as a Service (PaaS)**                                                                               | **Software as a Service (SaaS)**                                                            |
-| --------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- |
-| Provides virtualized computing resources over the internet (e.g., AWS EC2). | Provides a platform allowing customers to develop, run, and manage applications (e.g., AWS Elastic Beanstalk). | Provides software applications over the internet on a subscription basis (e.g., AWS Chime). |
-| Offers maximum control over the infrastructure.                             | Focus on deploying applications without managing underlying infrastructure.                                    | Accessible over the internet, usually via a web browser.                                    |
-| Suitable for developers needing control over OS, middleware, and runtime.   | Ideal for developers who want to focus on application development.                                             | Suitable for users needing access to software without infrastructure management.            |
 
 ### Example of Cloud Computing Types
 
@@ -189,6 +161,32 @@
   - Heroku, Google App Engine (GCP), Windows Azure (Microsoft)
 - **SaaS**: AWS Chime
   - Google Apps (Gmail), Dropbox, Zoom
+</br></br>
+🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗
+
+# AWS🤗🤗
+## What is AWS?
+* AWS (Amazon Web Services) is a comprehensive, evolving cloud computing platform provided by Amazon that includes a mixture of  (IaaS),  (PaaS) and  (SaaS) offerings.
+* AWS Use Cases
+  * AWS Use Cases
+    * Enterprise IT, Backup & Storage, Big Data Analytics
+    * Website hosting, Mobile & Social Apps
+    * Gaming
+
+## AWS Global Infrastructure
+</br>
+<img width="1137" height="391" alt="image" src="https://github.com/user-attachments/assets/36c28ad7-c76e-4d9b-8d3f-7f8a636b7ce0" />
+
+### AWS Regions
+* It is a physical geographical location in the world where AWS has multiple Availability Zones.
+*  Regions include North America, South America, Europe, Asia, and other parts of the globe. 
+  * Since a single AZ consists of multiple data centers, your system can achieve a higher level of fault tolerance by running it in two
+    #### Data Centers:
+    * A data center is a location where the actual physical data resides, and data processing occurs.
+    * AWS data centers are built in clusters in various global regions
+
+
+
 
 ### Pricing of the Cloud – Quick Overview
 
