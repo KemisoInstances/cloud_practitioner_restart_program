@@ -67,10 +67,17 @@
 ## Components that make up IT Infrastructure
 * Hardware
 * Software
-*Network connectivity**
-*Human Resources**
+* Network connectivity
+* Human Resources
 
+ - Hardware
+   Physical components that make up a computer system.
+   CPU, memory, motherboard, network card
+   <img width="141" height="113" alt="image" src="https://github.com/user-attachments/assets/08537c28-c52c-4a93-afa4-68468825f792" />
 
+ - Software
+ - Network Connectivity
+ - Human Resources
 
 Cloud computing is the on-demand delivery of compute power, database storage, applications, and other IT resources through a cloud services platform with pay-as-you-go pricing. It provides:
 
