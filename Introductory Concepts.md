@@ -256,7 +256,7 @@
 - **under-provisioning** - Use Auto Scaling
 - **Manage change in automation** - Use automation to make changes to infrastructure
 
-  4. **Sustainability**
+4. **Sustainability**
      
  - The sustainability pillar focuses on minimizing the environmental impacts of running cloud workloads.
    
@@ -307,85 +307,73 @@ projects
      * AWS Budgets
      * AWS Savings Plan
 
+</br>
 
-### Pricing of the Cloud – Quick Overview
+1. **AWS Total Cost of Ownership**: reducing the need to invest in large capital expenditures and providing a pay-as-you-go model. TCO calculators allow you to estimate the cost savings  and provide a detailed set of reports that can be used in executive presentations.
+</br>
 
-AWS follows three fundamental pricing principles based on the pay-as-you-go pricing model:
+2. **AWS Pricing Calculator**: estimate the monthly cost of AWS services for use case based on your expected usage
+</br>
 
-| **Fundamental**       | **Description**                                                                                                                                                      |
-| --------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Compute**           | Pay for the compute time you consume. Examples include EC2 instance hours or Lambda invocation duration.                                                             |
-| **Storage**           | Pay for the amount of data stored in the cloud. Examples include S3 storage space and EBS volume usage.                                                              |
-| **Data Transfer OUT** | Pay for data transfer out of the cloud. Data transfer IN is free. This pricing structure solves the issue of expensive data transfer fees in traditional IT systems. |
+3. **AWS Cost Allocation Tags**: used to organize AWS resources, and cost allocation tags to track the AWS costs on a detailed 
+level making it easier to categorize and track your AWS costs
+</br>
 
-### How Cloud Pricing Solves Traditional IT Cost Issues
+4. **AWS Cost and Usage Reports**: track your AWS usage and provide estimated charges associated with your account. Track your savings 
+plan use
+ • Understand trends in your bill
+</br>
 
-- Traditional IT requires expensive upfront investments for hardware, maintenance, and upgrades.
-- With AWS's pay-as-you-go model, you only pay for what you use, reducing overall costs.
-- You can scale up or down based on demand, minimizing under-utilized resources.
+5. **AWS Cost Explorer**: Cost explorer is a free service. You can see a forecast of future costs and historical cost data (comparing and 
+forecasting).  Forecast usage for up to 12 months based on the previous usage
+</br>
 
-### AWS Cloud Use Cases
+6. **AWS Budgets**: Track your AWS usage and cost. AWS Budgets notify you when you go over your budgeted amounts or when your estimated costs exceed your budgets.
+   
+   **Types of Budgets**:
+    
+• Cost budgets 
+• Usage budgets 
+• RI utilization budgets 
+• RI coverage budgets
+</br>
 
-1. **Web Hosting**: Host websites with elastic scaling and high availability.
-2. **Big Data Analytics**: Run analytics on large datasets.
-3. **Application Hosting**: Host applications with global accessibility and automated scaling.
-4. **Disaster Recovery**: Implement disaster recovery strategies with minimized infrastructure.
-5. **Backup and Storage**: Store backups in a highly durable and secure manner.
+7. **AWS Savings Plan**: offer significant savings over On-Demand Instances, just like EC2 Reserved Instances, in exchange for a 
+commitment to use a specific amount of compute power **(measured in $/hour) for a one or three-year period**
 
-## AWS Global Infrastructure
 
-### AWS Regions
 
-- Geographically isolated areas where AWS clusters data centers.
-- Each region has multiple Availability Zones.
-- Used to deploy applications close to customers for lower latency.
+</br></br>
+🙂🙂 🙂🙂 🙂🙂 🙂🙂🙂🙂 🙂🙂 🙂🙂 🙂🙂 🙂🙂🙂🙂 🙂🙂 🙂🙂
+</br>
 
-### How to Choose an AWS Region?
+# AWS Shared Responsibility Model🙂🙂
 
-- **Latency**: Choose a region closest to your customers for lower latency.
-- **Compliance**: Ensure the region meets data residency and compliance requirements.
-- **Services Available**: Check which AWS services are offered in the region.
-- **Pricing**: Prices vary by region, so choose a region that fits your cost requirements.
+  ## What is the Shared Responsibility Model?
+   - AWS and the customer share responsibility for security and compliance
+   - Divides security tasks based on **AWS as the provider** and **customer as the user** of cloud services.
 
-### AWS Availability Zones (AZs)
+     ### AWS Responsibilities: **Security *of* the Cloud**
 
-- Multiple, isolated data centers within a region.
-- Each AZ has independent power, cooling, and networking.
-- Provides redundancy and fault tolerance in case of a failure.
-- They’re connected with high bandwidth, ultra-low latency networking
+     - AWS is responsible for protecting the infrastructure that runs all services offered in the AWS Cloud.
+     - Includes hardware, software, networking, and facilities:
+       - **Physical security** of data centers (e.g., access control, environmental controls).
+       - **Infrastructure** security, such as maintaining hypervisors, host operating systems, and network infrastructure.
+       - **Global network** operations, such as DDoS protection and monitoring.
 
-### AWS Points of Presence (Edge Locations)
 
-- Network locations that deliver content closer to end users.
-- Used by services like Amazon CloudFront and AWS Global Accelerator.
-- Provides low latency and improved performance for content delivery.
+     ### Customer Responsibilities: **Security *in* the Cloud**
 
-## AWS Shared Responsibility Model
+     - Customers are responsible for managing and securing what they put in the cloud.
+     - Includes:
+       -  **Data protection**: Encrypt data in transit and at rest.
+       -  **IAM**: Control access through Identity and Access Management (IAM) roles, users, and policies.
+       -  **OS and application configurations**: Maintain security of guest operating systems, applications, and firewall configurations.
+       -  **Network settings**: Manage security group rules and network access control lists (NACLs).
+       -  **Compliance**: Ensure compliance with regulations and standards based on data storage and usage.
 
-### What is the Shared Responsibility Model?
 
-- AWS and the customer share responsibility for security and compliance.
-- Divides security tasks based on **AWS as the provider** and **customer as the user** of cloud services.
-
-### AWS Responsibilities: **Security *of* the Cloud**
-
-- AWS is responsible for protecting the infrastructure that runs all services offered in the AWS Cloud.
-- Includes hardware, software, networking, and facilities:
-  - **Physical security** of data centers (e.g., access control, environmental controls).
-  - **Infrastructure** security, such as maintaining hypervisors, host operating systems, and network infrastructure.
-  - **Global network** operations, such as DDoS protection and monitoring.
-
-### Customer Responsibilities: **Security *in* the Cloud**
-
-- Customers are responsible for managing and securing what they put in the cloud.
-- Includes:
-  - **Data protection**: Encrypt data in transit and at rest.
-  - **IAM**: Control access through Identity and Access Management (IAM) roles, users, and policies.
-  - **OS and application configurations**: Maintain security of guest operating systems, applications, and firewall configurations.
-  - **Network settings**: Manage security group rules and network access control lists (NACLs).
-  - **Compliance**: Ensure compliance with regulations and standards based on data storage and usage.
-
-### Example Responsibilities for Different AWS Services
+     ### Example Responsibilities for Different AWS Services
 
 | **Service Type**     | **AWS Responsibility**                                     | **Customer Responsibility**                                            |
 | -------------------- | ---------------------------------------------------------- | ---------------------------------------------------------------------- |
