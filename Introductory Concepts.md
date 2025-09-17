@@ -222,12 +222,90 @@
 
 
  </br>
+ 
  1. **Operational Excellence**
- **Design Principles**
- 2. 
- 
- 
+    
+      ***Design Principles***
+    
+         a.  **Perform operations as code** - Infrastructure as code
+         b.  **Annotate documentation** - Automate the creation of annotated documentation after every build
+         c.  **Make frequent, small, reversible changes** - So that in case of any failure, you can reverse it
+         d.   **Refine operations procedures frequently** - And ensure that team members are familiar with it
+         e.  **Anticipate failure** - Learn from all operational failures
 
+ 3. **Performance Efficiency**
+ - Includes the ability to use computing resources efficiently to meet system requirements, and to maintain that efficiency as demand changes and technologies evolve
+   
+     ***Design Principles***:
+   
+- **Democratize advanced technologies** - Advance technologies become services and hence you can focus more on product development
+- **Go global in minutes** - Easy deployment in multiple regions
+- **Use serverless architectures** - Avoid the burden of managing servers
+- **Experiment more often**- Easy to carry out comparative testing
+- **Mechanical sympathy** - Be aware of all AWS services
+
+ 3. **Reliability**
+ - Ability of a system to recover from infrastructure or service disruptions, dynamically acquire computing resources to meet demand and mitigate disruptions such as misconfigurations or transient network issues
+   
+ ***Design Principles**:
+ 
+ - **Test recovery procedures** - Use automation to simulate different failures or to recreate scenarios that led to failures before
+ - **Automatically recover from failure** - Anticipate and remediate failures before they occur
+ - **Scale horizontally to increase aggregate system availability** - Distribute requests across multiple, smaller resources to ensure that they don't share a common point of failure
+ - **Stop guessing capacity** - Maintain the optimal level to satisfy demand without over or 
+- **under-provisioning** - Use Auto Scaling
+- **Manage change in automation** - Use automation to make changes to infrastructure
+
+  4. **Sustainability**
+     
+ - The sustainability pillar focuses on minimizing the environmental impacts of running cloud workloads.
+   
+    ***Design Principles***:
+   
+ - **Understand your impact** – establish performance indicators, evaluate improvements
+ - **Establish sustainability goals** – Set long-term goals for each workload, model return on investment (ROI)
+ - **Maximize utilization** – Right size each workload to maximize the energy efficiency of the underlying hardware and minimize idle resources.
+ - **Anticipate and adopt new, more efficient hardware and software offerings** – and design for flexibility to adopt new technologies over time.
+ - **Use managed services** – Shared services reduce the amount of infrastructure; Managed services help automate sustainability best practices as moving infrequent accessed data to cold storage and adjusting compute capacity.
+ - **Reduce the downstream impact of your cloud workloads** – Reduce the amount of energy or resources required to use your services and reduce the need for your customers to upgrade their devices
+
+5. **Security**
+   
+- Includes the ability to protect the information, systems, and assets while delivering business value through risk assessments and mitigation strategies
+
+ ***Design Principles***:
+ 
+- **Implement a strong identity foundation** - Centralize privilege management and reduce (or even eliminate) reliance on long-term credentials - Principle of least privilege - IAM
+- **Enable traceability** - Integrate logs and metrics with systems to automatically respond and take action
+- **Apply security at all layers** - Like edge network, VPC, subnet, load balancer, every instance, operating system, and application
+- **Keep people away from data** - Reduce or eliminate the need for direct access or manual processing of data
+  
+6. **Cost Optimisation**
+   
+- Includes the ability to run systems to deliver business value at the lowestprice point
+
+***Design Principles***:
+
+- **Adopt a consumption mode** - Pay only for what you use
+- **Measure overall efficiency** - Use CloudWatch
+- **Stop spending money on data center operations** - AWS does the infrastructure part and enables customers to focus on organization 
+projects
+ - **Analyze and attribute expenditure** - Accurate identification of system usage and costs helps measure return on investment (ROI) - Make sure to use tags
+ </br></br>
+⛽⛽ ⛽⛽ ⛽⛽ ⛽⛽ ⛽⛽ ⛽⛽ ⛽⛽ ⛽⛽ ⛽⛽ ⛽⛽ ⛽⛽ ⛽⛽ ⛽⛽ ⛽⛽ ⛽⛽
+
+</br>
+
+# AWS FINANCIAL MANAGEMENT⛽⛽
+
+  ## Types of Financial Management
+     *  AWS Total Cost of Ownership
+     * AWS Pricing Calculator
+     * AWS Cost Allocation Tags
+     * AWS Cost and Usage Reports
+     * AWS Cost Explorer
+     * AWS Budgets
+     * AWS Savings Plan
 
 
 ### Pricing of the Cloud – Quick Overview
