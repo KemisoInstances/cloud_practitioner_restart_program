@@ -381,6 +381,26 @@ commitment to use a specific amount of compute power **(measured in $/hour) for 
 | **PaaS (e.g., RDS)** | Managing the database engine, backups, and patching.       | Secure data at rest and in transit, manage DB access, and IAM roles.   |
 | **SaaS (e.g., S3)**  | Protecting the service's underlying infrastructure.        | Manage permissions, bucket policies, and data lifecycle rules.         |
 
+</br></br>
+
+😀😀 😀😀 😀😀 😀😀 😀😀 😀😀 😀😀 😀😀 😀😀 😀😀 😀😀 😀😀 😀😀 😀😀
+</br>
+
+# AWS Support Plans😀😀
+</br>
+
+  ## Types of Support Plans
+</br>
+
+- **BASIC**: Offers cutomer service, such as 24/7 customer sevice, documentation, whitepaper, 7 core Trusted Advisor and building block architectural support
+- **Businees**: offers features from developer support tier such as technical support, Third party support and all trusted Advisor cherks
+- **Enterprise On-Ramp**: Recommended if you have a business and/or mission critical workloads in AWS, there is Access to a pool of Technical Account Managers (TAM), support team (billing) and Infrastructure Event Manager and Architecture.
+- **Enterprise**: 15 minutes response time,  A dedicated technical accounts manager (TAM), short term engagement with AWS support to partner
+
+     
+
+
+
 ### Summary
 
 - AWS handles security *of* the cloud, while customers manage security *in* the cloud.
