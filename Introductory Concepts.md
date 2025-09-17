@@ -162,7 +162,7 @@
 - **SaaS**: AWS Chime
   - Google Apps (Gmail), Dropbox, Zoom
 </br></br>
-🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗
+🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗
 
 # AWS🤗🤗
 ## What is AWS?
@@ -185,6 +185,48 @@
     * A data center is a location where the actual physical data resides, and data processing occurs.
     * AWS data centers are built in clusters in various global regions
 
+    ##### How to choose an AWS Region
+    1.  **Compliance with data governance and legal requirements**: data never leaves a region without your explicit permission
+    2.   **Latency**: reduced latency can make substantial impact on enhancing the user experience.
+    3.   **Services and features**: new services and new features aren’t available in every Region
+    4.   **Pricing/ cost**: pricing varies from region to region and is transparent on the service pricing page
+
+### AWS Availability Zones
+* Availability Zones consist of one or more discrete data centers that are designed for fault isolation.
+* They’re separate from each other so that they’re isolated from disasters.
+* They’re connected with high bandwidth, ultra-low latency networking.
+</br>
+                                            <img width="557" height="413" alt="image" src="https://github.com/user-attachments/assets/381e6ee8-78f1-4884-a6e9-fdca3aa12342" />
+  </br>
+  ### AWS Edge Locations
+  * Edge locations are AWS data centers designed to deliver services with the lowest latency possible
+  * They’re closer to users than Regions or Availability Zones, often in major cities, so responses can be fast
+  </br>
+                                         <img width="402" height="490" alt="image" src="https://github.com/user-attachments/assets/98ea0bd2-90f1-45e5-b228-e7bd52e7f772" />
+
+ </br></br>
+ 🏖️🏖️  🏖️🏖️  🏖️🏖️  🏖️🏖️  🏖️🏖️  🏖️🏖️  🏖️🏖️  🏖️🏖️  🏖️🏖️  🏖️🏖️  🏖️🏖️  🏖️🏖️
+
+ # AWS ARCHITECTURED FRAMEWORK 🏖️🏖️
+ - Architected Framework helps you understand the pros and cons of decisions you make while building systems on AWS.
+   ## AWS Cloud Best Practices – Design Principles
+   +  **Scalability**: vertical & horizontal
+   +  **Design for Failure**: This concept encourages you to be a pessimist when designing architectures in the cloud and assumes that the components of your architecture will fail.
+   +  **Disposable Resources**: servers should be disposable and easily configured.
+   +  **Decouple your components**: the key concept is to build components that do not have tight dependencies on each other so that if one component were to fail for some reason, the other components in the system will continue to work. This is also known as loose coupling.
+   +  **Services, not servers**: Don’t use just EC2, use managed services, databases, serverless services
+  
+   ## Architected Framework Pillars
+   </br>
+                           <img width="1300" height="660" alt="image" src="https://github.com/user-attachments/assets/2b9fe5b9-3192-4398-b746-96745dd38221" />
+
+
+ </br>
+ 1. **Operational Excellence**
+ **Design Principles**
+ 2. 
+ 
+ 
 
 
 
