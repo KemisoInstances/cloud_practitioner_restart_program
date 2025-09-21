@@ -1,0 +1,1011 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AWS Quiz</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6;
+        }
+        details > summary {
+            list-style: none;
+        }
+        details > summary::-webkit-details-marker {
+            display: none;
+        }
+        details[open] summary ~ * {
+            animation: sweep .3s ease-in-out;
+        }
+        @keyframes sweep {
+            0% { opacity: 0; transform: translateY(-10px) }
+            100% { opacity: 1; transform: translateY(0) }
+        }
+    </style>
+</head>
+<body class="bg-gray-100 p-4 sm:p-8">
+
+    <div class="max-w-4xl mx-auto">
+        <h1 class="text-4xl sm:text-5xl font-extrabold text-center text-gray-800 mb-4 tracking-tight">AWS Services Quiz</h1>
+        <p class="text-center text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
+            Test your knowledge of core AWS services. Select your answer(s) and click submit. You can check the correct answer and explanation after submitting.
+        </p>
+
+        <!-- Question 1 -->
+        <div id="q1" class="bg-white p-6 sm:p-8 rounded-xl shadow-lg mb-8">
+            <p class="text-lg font-semibold text-gray-700 mb-4">Question 1: Which two resources can AWS WAF protect? (Choose 2)</p>
+            <form class="space-y-3">
+                <label class="block flex items-center bg-gray-50 hover:bg-gray-100 p-4 rounded-lg cursor-pointer transition-colors duration-200">
+                    <input type="checkbox" name="q1" value="a" class="form-checkbox text-blue-600 h-5 w-5 rounded-md focus:ring-2 focus:ring-blue-500 mr-3" data-correct="true">
+                    <span>a. Application Load Balancers</span>
+                </label>
+                <label class="block flex items-center bg-gray-50 hover:bg-gray-100 p-4 rounded-lg cursor-pointer transition-colors duration-200">
+                    <input type="checkbox" name="q1" value="b" class="form-checkbox text-blue-600 h-5 w-5 rounded-md focus:ring-2 focus:ring-blue-500 mr-3" data-correct="true">
+                    <span>b. Amazon CloudFront distributions</span>
+                </label>
+                <label class="block flex items-center bg-gray-50 hover:bg-gray-100 p-4 rounded-lg cursor-pointer transition-colors duration-200">
+                    <input type="checkbox" name="q1" value="c" class="form-checkbox text-blue-600 h-5 w-5 rounded-md focus:ring-2 focus:ring-blue-500 mr-3">
+                    <span>c. EC2 Instances directly</span>
+                </label>
+                <label class="block flex items-center bg-gray-50 hover:bg-gray-100 p-4 rounded-lg cursor-pointer transition-colors duration-200">
+                    <input type="checkbox" name="q1" value="d" class="form-checkbox text-blue-600 h-5 w-5 rounded-md focus:ring-2 focus:ring-blue-500 mr-3">
+                    <span>d. IAM Roles</span>
+                </label>
+            </form>
+            <div class="mt-6 flex justify-between items-center">
+                <button onclick="checkAnswer('q1')" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-full transition-all duration-300 transform hover:scale-105 shadow-md">Submit</button>
+                <div id="result-q1" class="text-lg font-bold"></div>
+            </div>
+            <details class="mt-6 p-4 rounded-lg bg-gray-100 border border-gray-200">
+                <summary class="font-semibold text-gray-700 cursor-pointer flex items-center">
+                    <span class="mr-2 transform rotate-0 transition-transform duration-300">▶</span>
+                    <span>Show Answer and Explanation</span>
+                </summary>
+                <div class="mt-4 text-gray-600">
+                    <p class="font-bold">Correct Answers: a, b</p>
+                    <p class="mt-2">AWS WAF is a web application firewall that protects against common web exploits. It can be associated with an Amazon CloudFront distribution, an Application Load Balancer, or an Amazon API Gateway REST API.</p>
+                </div>
+            </details>
+        </div>
+
+        <!-- Question 2 -->
+        <div id="q2" class="bg-white p-6 sm:p-8 rounded-xl shadow-lg mb-8">
+            <p class="text-lg font-semibold text-gray-700 mb-4">Question 2: A system administrator wants to visualise EC2 CPU usage in near real time. Which CloudWatch component is best suited?</p>
+            <form class="space-y-3">
+                <label class="block flex items-center bg-gray-50 hover:bg-gray-100 p-4 rounded-lg cursor-pointer transition-colors duration-200">
+                    <input type="radio" name="q2" value="a" class="form-radio text-blue-600 h-5 w-5 focus:ring-2 focus:ring-blue-500 mr-3">
+                    <span>a. CloudWatch Logs</span>
+                </label>
+                <label class="block flex items-center bg-gray-50 hover:bg-gray-100 p-4 rounded-lg cursor-pointer transition-colors duration-200">
+                    <input type="radio" name="q2" value="b" class="form-radio text-blue-600 h-5 w-5 focus:ring-2 focus:ring-blue-500 mr-3" data-correct="true">
+                    <span>b. CloudWatch Dashboard</span>
+                </label>
+                <label class="block flex items-center bg-gray-50 hover:bg-gray-100 p-4 rounded-lg cursor-pointer transition-colors duration-200">
+                    <input type="radio" name="q2" value="c" class="form-radio text-blue-600 h-5 w-5 focus:ring-2 focus:ring-blue-500 mr-3">
+                    <span>c. CloudWatch Alarms</span>
+                </label>
+                <label class="block flex items-center bg-gray-50 hover:bg-gray-100 p-4 rounded-lg cursor-pointer transition-colors duration-200">
+                    <input type="radio" name="q2" value="d" class="form-radio text-blue-600 h-5 w-5 focus:ring-2 focus:ring-blue-500 mr-3">
+                    <span>d. CloudTrail</span>
+                </label>
+            </form>
+            <div class="mt-6 flex justify-between items-center">
+                <button onclick="checkAnswer('q2')" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-full transition-all duration-300 transform hover:scale-105 shadow-md">Submit</button>
+                <div id="result-q2" class="text-lg font-bold"></div>
+            </div>
+            <details class="mt-6 p-4 rounded-lg bg-gray-100 border border-gray-200">
+                <summary class="font-semibold text-gray-700 cursor-pointer flex items-center">
+                    <span class="mr-2 transform rotate-0 transition-transform duration-300">▶</span>
+                    <span>Show Answer and Explanation</span>
+                </summary>
+                <div class="mt-4 text-gray-600">
+                    <p class="font-bold">Correct Answer: b</p>
+                    <p class="mt-2">CloudWatch Dashboards allow you to create customised visualisations of your metrics and logs to monitor your applications and infrastructure.</p>
+                </div>
+            </details>
+        </div>
+
+        <!-- Question 3 -->
+        <div id="q3" class="bg-white p-6 sm:p-8 rounded-xl shadow-lg mb-8">
+            <p class="text-lg font-semibold text-gray-700 mb-4">Question 3: Which two AWS services require explicit approval for penetration testing? (Choose 2)</p>
+            <form class="space-y-3">
+                <label class="block flex items-center bg-gray-50 hover:bg-gray-100 p-4 rounded-lg cursor-pointer transition-colors duration-200">
+                    <input type="checkbox" name="q3" value="a" class="form-checkbox text-blue-600 h-5 w-5 rounded-md focus:ring-2 focus:ring-blue-500 mr-3">
+                    <span>a. Amazon Route53</span>
+                </label>
+                <label class="block flex items-center bg-gray-50 hover:bg-gray-100 p-4 rounded-lg cursor-pointer transition-colors duration-200">
+                    <input type="checkbox" name="q3" value="b" class="form-checkbox text-blue-600 h-5 w-5 rounded-md focus:ring-2 focus:ring-blue-500 mr-3">
+                    <span>b. AWS Lambda</span>
+                </label>
+                <label class="block flex items-center bg-gray-50 hover:bg-gray-100 p-4 rounded-lg cursor-pointer transition-colors duration-200">
+                    <input type="checkbox" name="q3" value="c" class="form-checkbox text-blue-600 h-5 w-5 rounded-md focus:ring-2 focus:ring-blue-500 mr-3" data-correct="true">
+                    <span>c. Amazon RDS</span>
+                </label>
+                <label class="block flex items-center bg-gray-50 hover:bg-gray-100 p-4 rounded-lg cursor-pointer transition-colors duration-200">
+                    <input type="checkbox" name="q3" value="d" class="form-checkbox text-blue-600 h-5 w-5 rounded-md focus:ring-2 focus:ring-blue-500 mr-3" data-correct="true">
+                    <span>d. Amazon CloudFront</span>
+                </label>
+            </form>
+            <div class="mt-6 flex justify-between items-center">
+                <button onclick="checkAnswer('q3')" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-full transition-all duration-300 transform hover:scale-105 shadow-md">Submit</button>
+                <div id="result-q3" class="text-lg font-bold"></div>
+            </div>
+            <details class="mt-6 p-4 rounded-lg bg-gray-100 border border-gray-200">
+                <summary class="font-semibold text-gray-700 cursor-pointer flex items-center">
+                    <span class="mr-2 transform rotate-0 transition-transform duration-300">▶</span>
+                    <span>Show Answer and Explanation</span>
+                </summary>
+                <div class="mt-4 text-gray-600">
+                    <p class="font-bold">Correct Answers: c, d</p>
+                    <p class="mt-2">AWS requires explicit approval for penetration testing on certain services, including Amazon RDS and Amazon CloudFront, to ensure the integrity of the shared infrastructure and other customers' data.</p>
+                </div>
+            </details>
+        </div>
+
+        <!-- Question 4 -->
+        <div id="q4" class="bg-white p-6 sm:p-8 rounded-xl shadow-lg mb-8">
+            <p class="text-lg font-semibold text-gray-700 mb-4">Question 4: Which two types of metrics can CloudWatch collect? (Choose 2)</p>
+            <form class="space-y-3">
+                <label class="block flex items-center bg-gray-50 hover:bg-gray-100 p-4 rounded-lg cursor-pointer transition-colors duration-200">
+                    <input type="checkbox" name="q4" value="a" class="form-checkbox text-blue-600 h-5 w-5 rounded-md focus:ring-2 focus:ring-blue-500 mr-3" data-correct="true">
+                    <span>a. Billing metrics</span>
+                </label>
+                <label class="block flex items-center bg-gray-50 hover:bg-gray-100 p-4 rounded-lg cursor-pointer transition-colors duration-200">
+                    <input type="checkbox" name="q4" value="b" class="form-checkbox text-blue-600 h-5 w-5 rounded-md focus:ring-2 focus:ring-blue-500 mr-3">
+                    <span>b. IAM policies</span>
+                </label>
+                <label class="block flex items-center bg-gray-50 hover:bg-gray-100 p-4 rounded-lg cursor-pointer transition-colors duration-200">
+                    <input type="checkbox" name="q4" value="c" class="form-checkbox text-blue-600 h-5 w-5 rounded-md focus:ring-2 focus:ring-blue-500 mr-3" data-correct="true">
+                    <span>c. Custom metrics from applications</span>
+                </label>
+                <label class="block flex items-center bg-gray-50 hover:bg-gray-100 p-4 rounded-lg cursor-pointer transition-colors duration-200">
+                    <input type="checkbox" name="q4" value="d" class="form-checkbox text-blue-600 h-5 w-5 rounded-md focus:ring-2 focus:ring-blue-500 mr-3">
+                    <span>d. Security group rules</span>
+                </label>
+            </form>
+            <div class="mt-6 flex justify-between items-center">
+                <button onclick="checkAnswer('q4')" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-full transition-all duration-300 transform hover:scale-105 shadow-md">Submit</button>
+                <div id="result-q4" class="text-lg font-bold"></div>
+            </div>
+            <details class="mt-6 p-4 rounded-lg bg-gray-100 border border-gray-200">
+                <summary class="font-semibold text-gray-700 cursor-pointer flex items-center">
+                    <span class="mr-2 transform rotate-0 transition-transform duration-300">▶</span>
+                    <span>Show Answer and Explanation</span>
+                </summary>
+                <div class="mt-4 text-gray-600">
+                    <p class="font-bold">Correct Answers: a, c</p>
+                    <p class="mt-2">CloudWatch collects metrics from AWS services (like EC2 and Billing) and can also collect custom metrics that you define and publish from your own applications or on-premises systems.</p>
+                </div>
+            </details>
+        </div>
+
+        <!-- Question 5 -->
+        <div id="q5" class="bg-white p-6 sm:p-8 rounded-xl shadow-lg mb-8">
+            <p class="text-lg font-semibold text-gray-700 mb-4">Question 5: A global company wants a single service to deploy WAF rules, Shield protections, and Network Firewall policies across multiple AWS accounts. Which service is most suitable?</p>
+            <form class="space-y-3">
+                <label class="block flex items-center bg-gray-50 hover:bg-gray-100 p-4 rounded-lg cursor-pointer transition-colors duration-200">
+                    <input type="radio" name="q5" value="a" class="form-radio text-blue-600 h-5 w-5 focus:ring-2 focus:ring-blue-500 mr-3" data-correct="true">
+                    <span>a. AWS Firewall Manager</span>
+                </label>
+                <label class="block flex items-center bg-gray-50 hover:bg-gray-100 p-4 rounded-lg cursor-pointer transition-colors duration-200">
+                    <input type="radio" name="q5" value="b" class="form-radio text-blue-600 h-5 w-5 focus:ring-2 focus:ring-blue-500 mr-3">
+                    <span>b. Amazon Inspector</span>
+                </label>
+                <label class="block flex items-center bg-gray-50 hover:bg-gray-100 p-4 rounded-lg cursor-pointer transition-colors duration-200">
+                    <input type="radio" name="q5" value="c" class="form-radio text-blue-600 h-5 w-5 focus:ring-2 focus:ring-blue-500 mr-3">
+                    <span>c. AWS CloudWatch</span>
+                </label>
+                <label class="block flex items-center bg-gray-50 hover:bg-gray-100 p-4 rounded-lg cursor-pointer transition-colors duration-200">
+                    <input type="radio" name="q5" value="d" class="form-radio text-blue-600 h-5 w-5 focus:ring-2 focus:ring-blue-500 mr-3">
+                    <span>d. AWS Trusted Advisor</span>
+                </label>
+            </form>
+            <div class="mt-6 flex justify-between items-center">
+                <button onclick="checkAnswer('q5')" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-full transition-all duration-300 transform hover:scale-105 shadow-md">Submit</button>
+                <div id="result-q5" class="text-lg font-bold"></div>
+            </div>
+            <details class="mt-6 p-4 rounded-lg bg-gray-100 border border-gray-200">
+                <summary class="font-semibold text-gray-700 cursor-pointer flex items-center">
+                    <span class="mr-2 transform rotate-0 transition-transform duration-300">▶</span>
+                    <span>Show Answer and Explanation</span>
+                </summary>
+                <div class="mt-4 text-gray-600">
+                    <p class="font-bold">Correct Answer: a</p>
+                    <p class="mt-2">AWS Firewall Manager is a security management service that centrally configures and manages firewall rules across your accounts and applications in AWS Organization.</p>
+                </div>
+            </details>
+        </div>
+
+        <!-- Question 6 -->
+        <div id="q6" class="bg-white p-6 sm:p-8 rounded-xl shadow-lg mb-8">
+            <p class="text-lg font-semibold text-gray-700 mb-4">Question 6: A security analyst needs to detect unusual API activity and potential compromised IAM credentials. Which service should they use?</p>
+            <form class="space-y-3">
+                <label class="block flex items-center bg-gray-50 hover:bg-gray-100 p-4 rounded-lg cursor-pointer transition-colors duration-200">
+                    <input type="radio" name="q6" value="a" class="form-radio text-blue-600 h-5 w-5 focus:ring-2 focus:ring-blue-500 mr-3">
+                    <span>a. AWS Shield</span>
+                </label>
+                <label class="block flex items-center bg-gray-50 hover:bg-gray-100 p-4 rounded-lg cursor-pointer transition-colors duration-200">
+                    <input type="radio" name="q6" value="b" class="form-radio text-blue-600 h-5 w-5 focus:ring-2 focus:ring-blue-500 mr-3" data-correct="true">
+                    <span>b. AWS GuardDuty</span>
+                </label>
+                <label class="block flex items-center bg-gray-50 hover:bg-gray-100 p-4 rounded-lg cursor-pointer transition-colors duration-200">
+                    <input type="radio" name="q6" value="c" class="form-radio text-blue-600 h-5 w-5 focus:ring-2 focus:ring-blue-500 mr-3">
+                    <span>c. AWS WAF</span>
+                </label>
+                <label class="block flex items-center bg-gray-50 hover:bg-gray-100 p-4 rounded-lg cursor-pointer transition-colors duration-200">
+                    <input type="radio" name="q6" value="d" class="form-radio text-blue-600 h-5 w-5 focus:ring-2 focus:ring-blue-500 mr-3">
+                    <span>d. AWS Inspector</span>
+                </label>
+            </form>
+            <div class="mt-6 flex justify-between items-center">
+                <button onclick="checkAnswer('q6')" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-full transition-all duration-300 transform hover:scale-105 shadow-md">Submit</button>
+                <div id="result-q6" class="text-lg font-bold"></div>
+            </div>
+            <details class="mt-6 p-4 rounded-lg bg-gray-100 border border-gray-200">
+                <summary class="font-semibold text-gray-700 cursor-pointer flex items-center">
+                    <span class="mr-2 transform rotate-0 transition-transform duration-300">▶</span>
+                    <span>Show Answer and Explanation</span>
+                </summary>
+                <div class="mt-4 text-gray-600">
+                    <p class="font-bold">Correct Answer: b</p>
+                    <p class="mt-2">Amazon GuardDuty is a threat detection service that continuously monitors for malicious activity and unauthorized behavior to protect your AWS accounts and workloads.</p>
+                </div>
+            </details>
+        </div>
+
+        <!-- Question 7 -->
+        <div id="q7" class="bg-white p-6 sm:p-8 rounded-xl shadow-lg mb-8">
+            <p class="text-lg font-semibold text-gray-700 mb-4">Question 7: An e-commerce company wants to block SQL injection and cross-site scripting attacks on its website. Which service should they use?</p>
+            <form class="space-y-3">
+                <label class="block flex items-center bg-gray-50 hover:bg-gray-100 p-4 rounded-lg cursor-pointer transition-colors duration-200">
+                    <input type="radio" name="q7" value="a" class="form-radio text-blue-600 h-5 w-5 focus:ring-2 focus:ring-blue-500 mr-3">
+                    <span>a. AWS Inspector</span>
+                </label>
+                <label class="block flex items-center bg-gray-50 hover:bg-gray-100 p-4 rounded-lg cursor-pointer transition-colors duration-200">
+                    <input type="radio" name="q7" value="b" class="form-radio text-blue-600 h-5 w-5 focus:ring-2 focus:ring-blue-500 mr-3">
+                    <span>b. AWS Shield</span>
+                </label>
+                <label class="block flex items-center bg-gray-50 hover:bg-gray-100 p-4 rounded-lg cursor-pointer transition-colors duration-200">
+                    <input type="radio" name="q7" value="c" class="form-radio text-blue-600 h-5 w-5 focus:ring-2 focus:ring-blue-500 mr-3" data-correct="true">
+                    <span>c. AWS WAF</span>
+                </label>
+                <label class="block flex items-center bg-gray-50 hover:bg-gray-100 p-4 rounded-lg cursor-pointer transition-colors duration-200">
+                    <input type="radio" name="q7" value="d" class="form-radio text-blue-600 h-5 w-5 focus:ring-2 focus:ring-blue-500 mr-3">
+                    <span>d. AWS GuardDuty</span>
+                </label>
+            </form>
+            <div class="mt-6 flex justify-between items-center">
+                <button onclick="checkAnswer('q7')" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-full transition-all duration-300 transform hover:scale-105 shadow-md">Submit</button>
+                <div id="result-q7" class="text-lg font-bold"></div>
+            </div>
+            <details class="mt-6 p-4 rounded-lg bg-gray-100 border border-gray-200">
+                <summary class="font-semibold text-gray-700 cursor-pointer flex items-center">
+                    <span class="mr-2 transform rotate-0 transition-transform duration-300">▶</span>
+                    <span>Show Answer and Explanation</span>
+                </summary>
+                <div class="mt-4 text-gray-600">
+                    <p class="font-bold">Correct Answer: c</p>
+                    <p class="mt-2">AWS WAF is designed to protect web applications or APIs against common web exploits and bots that may affect availability, compromise security, or consume excessive resources.</p>
+                </div>
+            </details>
+        </div>
+
+        <!-- Question 8 -->
+        <div id="q8" class="bg-white p-6 sm:p-8 rounded-xl shadow-lg mb-8">
+            <p class="text-lg font-semibold text-gray-700 mb-4">Question 8: A company wants to apply centralised firewall policies across multiple AWS accounts. Which service should they use?</p>
+            <form class="space-y-3">
+                <label class="block flex items-center bg-gray-50 hover:bg-gray-100 p-4 rounded-lg cursor-pointer transition-colors duration-200">
+                    <input type="radio" name="q8" value="a" class="form-radio text-blue-600 h-5 w-5 focus:ring-2 focus:ring-blue-500 mr-3" data-correct="true">
+                    <span>a. AWS Firewall Manager</span>
+                </label>
+                <label class="block flex items-center bg-gray-50 hover:bg-gray-100 p-4 rounded-lg cursor-pointer transition-colors duration-200">
+                    <input type="radio" name="q8" value="b" class="form-radio text-blue-600 h-5 w-5 focus:ring-2 focus:ring-blue-500 mr-3">
+                    <span>b. AWS WAF</span>
+                </label>
+                <label class="block flex items-center bg-gray-50 hover:bg-gray-100 p-4 rounded-lg cursor-pointer transition-colors duration-200">
+                    <input type="radio" name="q8" value="c" class="form-radio text-blue-600 h-5 w-5 focus:ring-2 focus:ring-blue-500 mr-3">
+                    <span>c. AWS Network Firewall</span>
+                </label>
+                <label class="block flex items-center bg-gray-50 hover:bg-gray-100 p-4 rounded-lg cursor-pointer transition-colors duration-200">
+                    <input type="radio" name="q8" value="d" class="form-radio text-blue-600 h-5 w-5 focus:ring-2 focus:ring-blue-500 mr-3">
+                    <span>d. Amazon GuardDuty</span>
+                </label>
+            </form>
+            <div class="mt-6 flex justify-between items-center">
+                <button onclick="checkAnswer('q8')" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-full transition-all duration-300 transform hover:scale-105 shadow-md">Submit</button>
+                <div id="result-q8" class="text-lg font-bold"></div>
+            </div>
+            <details class="mt-6 p-4 rounded-lg bg-gray-100 border border-gray-200">
+                <summary class="font-semibold text-gray-700 cursor-pointer flex items-center">
+                    <span class="mr-2 transform rotate-0 transition-transform duration-300">▶</span>
+                    <span>Show Answer and Explanation</span>
+                </summary>
+                <div class="mt-4 text-gray-600">
+                    <p class="font-bold">Correct Answer: a</p>
+                    <p class="mt-2">AWS Firewall Manager simplifies the administration and maintenance of your AWS WAF, AWS Shield Advanced, and AWS Network Firewall rules across multiple accounts.</p>
+                </div>
+            </details>
+        </div>
+
+        <!-- Question 9 -->
+        <div id="q9" class="bg-white p-6 sm:p-8 rounded-xl shadow-lg mb-8">
+            <p class="text-lg font-semibold text-gray-700 mb-4">Question 9: Trusted Advisor checks can help with which of the following? (Choose 2)</p>
+            <form class="space-y-3">
+                <label class="block flex items-center bg-gray-50 hover:bg-gray-100 p-4 rounded-lg cursor-pointer transition-colors duration-200">
+                    <input type="checkbox" name="q9" value="a" class="form-checkbox text-blue-600 h-5 w-5 rounded-md focus:ring-2 focus:ring-blue-500 mr-3">
+                    <span>a. DDoS Mitigation</span>
+                </label>
+                <label class="block flex items-center bg-gray-50 hover:bg-gray-100 p-4 rounded-lg cursor-pointer transition-colors duration-200">
+                    <input type="checkbox" name="q9" value="b" class="form-checkbox text-blue-600 h-5 w-5 rounded-md focus:ring-2 focus:ring-blue-500 mr-3" data-correct="true">
+                    <span>b. Identity and Access Management</span>
+                </label>
+                <label class="block flex items-center bg-gray-50 hover:bg-gray-100 p-4 rounded-lg cursor-pointer transition-colors duration-200">
+                    <input type="checkbox" name="q9" value="c" class="form-checkbox text-blue-600 h-5 w-5 rounded-md focus:ring-2 focus:ring-blue-500 mr-3" data-correct="true">
+                    <span>c. Cost Optimisation</span>
+                </label>
+                <label class="block flex items-center bg-gray-50 hover:bg-gray-100 p-4 rounded-lg cursor-pointer transition-colors duration-200">
+                    <input type="checkbox" name="q9" value="d" class="form-checkbox text-blue-600 h-5 w-5 rounded-md focus:ring-2 focus:ring-blue-500 mr-3">
+                    <span>d. Real-time malware detection</span>
+                </label>
+            </form>
+            <div class="mt-6 flex justify-between items-center">
+                <button onclick="checkAnswer('q9')" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-full transition-all duration-300 transform hover:scale-105 shadow-md">Submit</button>
+                <div id="result-q9" class="text-lg font-bold"></div>
+            </div>
+            <details class="mt-6 p-4 rounded-lg bg-gray-100 border border-gray-200">
+                <summary class="font-semibold text-gray-700 cursor-pointer flex items-center">
+                    <span class="mr-2 transform rotate-0 transition-transform duration-300">▶</span>
+                    <span>Show Answer and Explanation</span>
+                </summary>
+                <div class="mt-4 text-gray-600">
+                    <p class="font-bold">Correct Answers: b, c</p>
+                    <p class="mt-2">AWS Trusted Advisor provides recommendations in five categories: Cost Optimization, Performance, Security, Fault Tolerance, and Service Limits. It helps with IAM (Security) and Cost Optimization.</p>
+                </div>
+            </details>
+        </div>
+
+        <!-- Question 10 -->
+        <div id="q10" class="bg-white p-6 sm:p-8 rounded-xl shadow-lg mb-8">
+            <p class="text-lg font-semibold text-gray-700 mb-4">Question 10: Which AWS service provides fine-grained network traffic filtering at the VPC level?</p>
+            <form class="space-y-3">
+                <label class="block flex items-center bg-gray-50 hover:bg-gray-100 p-4 rounded-lg cursor-pointer transition-colors duration-200">
+                    <input type="radio" name="q10" value="a" class="form-radio text-blue-600 h-5 w-5 focus:ring-2 focus:ring-blue-500 mr-3">
+                    <span>a. AWS WAF</span>
+                </label>
+                <label class="block flex items-center bg-gray-50 hover:bg-gray-100 p-4 rounded-lg cursor-pointer transition-colors duration-200">
+                    <input type="radio" name="q10" value="b" class="form-radio text-blue-600 h-5 w-5 focus:ring-2 focus:ring-blue-500 mr-3" data-correct="true">
+                    <span>b. AWS Network Firewall</span>
+                </label>
+                <label class="block flex items-center bg-gray-50 hover:bg-gray-100 p-4 rounded-lg cursor-pointer transition-colors duration-200">
+                    <input type="radio" name="q10" value="c" class="form-radio text-blue-600 h-5 w-5 focus:ring-2 focus:ring-blue-500 mr-3">
+                    <span>c. AWS Shield</span>
+                </label>
+                <label class="block flex items-center bg-gray-50 hover:bg-gray-100 p-4 rounded-lg cursor-pointer transition-colors duration-200">
+                    <input type="radio" name="q10" value="d" class="form-radio text-blue-600 h-5 w-5 focus:ring-2 focus:ring-blue-500 mr-3">
+                    <span>d. CloudTrail</span>
+                </label>
+            </form>
+            <div class="mt-6 flex justify-between items-center">
+                <button onclick="checkAnswer('q10')" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-full transition-all duration-300 transform hover:scale-105 shadow-md">Submit</button>
+                <div id="result-q10" class="text-lg font-bold"></div>
+            </div>
+            <details class="mt-6 p-4 rounded-lg bg-gray-100 border border-gray-200">
+                <summary class="font-semibold text-gray-700 cursor-pointer flex items-center">
+                    <span class="mr-2 transform rotate-0 transition-transform duration-300">▶</span>
+                    <span>Show Answer and Explanation</span>
+                </summary>
+                <div class="mt-4 text-gray-600">
+                    <p class="font-bold">Correct Answer: b</p>
+                    <p class="mt-2">AWS Network Firewall is a managed service that makes it easy to deploy essential network protections for all your Amazon VPCs.</p>
+                </div>
+            </details>
+        </div>
+
+        <!-- Question 11 -->
+        <div id="q11" class="bg-white p-6 sm:p-8 rounded-xl shadow-lg mb-8">
+            <p class="text-lg font-semibold text-gray-700 mb-4">Question 11: Which AWS service records all API calls made in your AWS account, including from the Management Console, CLI, and SDKs?</p>
+            <form class="space-y-3">
+                <label class="block flex items-center bg-gray-50 hover:bg-gray-100 p-4 rounded-lg cursor-pointer transition-colors duration-200">
+                    <input type="radio" name="q11" value="a" class="form-radio text-blue-600 h-5 w-5 focus:ring-2 focus:ring-blue-500 mr-3">
+                    <span>a. Trusted Advisor</span>
+                </label>
+                <label class="block flex items-center bg-gray-50 hover:bg-gray-100 p-4 rounded-lg cursor-pointer transition-colors duration-200">
+                    <input type="radio" name="q11" value="b" class="form-radio text-blue-600 h-5 w-5 focus:ring-2 focus:ring-blue-500 mr-3">
+                    <span>b. Amazon CloudWatch</span>
+                </label>
+                <label class="block flex items-center bg-gray-50 hover:bg-gray-100 p-4 rounded-lg cursor-pointer transition-colors duration-200">
+                    <input type="radio" name="q11" value="c" class="form-radio text-blue-600 h-5 w-5 focus:ring-2 focus:ring-blue-500 mr-3" data-correct="true">
+                    <span>c. Amazon CloudTrail</span>
+                </label>
+                <label class="block flex items-center bg-gray-50 hover:bg-gray-100 p-4 rounded-lg cursor-pointer transition-colors duration-200">
+                    <input type="radio" name="q11" value="d" class="form-radio text-blue-600 h-5 w-5 focus:ring-2 focus:ring-blue-500 mr-3">
+                    <span>d. Amazon GuardDuty</span>
+                </label>
+            </form>
+            <div class="mt-6 flex justify-between items-center">
+                <button onclick="checkAnswer('q11')" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-full transition-all duration-300 transform hover:scale-105 shadow-md">Submit</button>
+                <div id="result-q11" class="text-lg font-bold"></div>
+            </div>
+            <details class="mt-6 p-4 rounded-lg bg-gray-100 border border-gray-200">
+                <summary class="font-semibold text-gray-700 cursor-pointer flex items-center">
+                    <span class="mr-2 transform rotate-0 transition-transform duration-300">▶</span>
+                    <span>Show Answer and Explanation</span>
+                </summary>
+                <div class="mt-4 text-gray-600">
+                    <p class="font-bold">Correct Answer: c</p>
+                    <p class="mt-2">AWS CloudTrail enables governance, compliance, operational auditing, and risk auditing of your AWS account. It records actions taken by a user, role, or an AWS service as an event.</p>
+                </div>
+            </details>
+        </div>
+
+        <!-- Question 12 -->
+        <div id="q12" class="bg-white p-6 sm:p-8 rounded-xl shadow-lg mb-8">
+            <p class="text-lg font-semibold text-gray-700 mb-4">Question 12: A security team wants to identify who deleted an S3 bucket. Which service should they check?</p>
+            <form class="space-y-3">
+                <label class="block flex items-center bg-gray-50 hover:bg-gray-100 p-4 rounded-lg cursor-pointer transition-colors duration-200">
+                    <input type="radio" name="q12" value="a" class="form-radio text-blue-600 h-5 w-5 focus:ring-2 focus:ring-blue-500 mr-3">
+                    <span>a. AWS Shield</span>
+                </label>
+                <label class="block flex items-center bg-gray-50 hover:bg-gray-100 p-4 rounded-lg cursor-pointer transition-colors duration-200">
+                    <input type="radio" name="q12" value="b" class="form-radio text-blue-600 h-5 w-5 focus:ring-2 focus:ring-blue-500 mr-3" data-correct="true">
+                    <span>b. AWS CloudTrail</span>
+                </label>
+                <label class="block flex items-center bg-gray-50 hover:bg-gray-100 p-4 rounded-lg cursor-pointer transition-colors duration-200">
+                    <input type="radio" name="q12" value="c" class="form-radio text-blue-600 h-5 w-5 focus:ring-2 focus:ring-blue-500 mr-3">
+                    <span>c. AWS Inspector</span>
+                </label>
+                <label class="block flex items-center bg-gray-50 hover:bg-gray-100 p-4 rounded-lg cursor-pointer transition-colors duration-200">
+                    <input type="radio" name="q12" value="d" class="form-radio text-blue-600 h-5 w-5 focus:ring-2 focus:ring-blue-500 mr-3">
+                    <span>d. Amazon GuardDuty</span>
+                </label>
+            </form>
+            <div class="mt-6 flex justify-between items-center">
+                <button onclick="checkAnswer('q12')" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-full transition-all duration-300 transform hover:scale-105 shadow-md">Submit</button>
+                <div id="result-q12" class="text-lg font-bold"></div>
+            </div>
+            <details class="mt-6 p-4 rounded-lg bg-gray-100 border border-gray-200">
+                <summary class="font-semibold text-gray-700 cursor-pointer flex items-center">
+                    <span class="mr-2 transform rotate-0 transition-transform duration-300">▶</span>
+                    <span>Show Answer and Explanation</span>
+                </summary>
+                <div class="mt-4 text-gray-600">
+                    <p class="font-bold">Correct Answer: b</p>
+                    <p class="mt-2">CloudTrail logs all API calls, including the 'DeleteBucket' API call, along with the identity of the user who made the request.</p>
+                </div>
+            </details>
+        </div>
+
+        <!-- Question 13 -->
+        <div id="q13" class="bg-white p-6 sm:p-8 rounded-xl shadow-lg mb-8">
+            <p class="text-lg font-semibold text-gray-700 mb-4">Question 13: Which IAM entity can only contain permissions but cannot directly make requests to AWS services?</p>
+            <form class="space-y-3">
+                <label class="block flex items-center bg-gray-50 hover:bg-gray-100 p-4 rounded-lg cursor-pointer transition-colors duration-200">
+                    <input type="radio" name="q13" value="a" class="form-radio text-blue-600 h-5 w-5 focus:ring-2 focus:ring-blue-500 mr-3">
+                    <span>a. IAM Role</span>
+                </label>
+                <label class="block flex items-center bg-gray-50 hover:bg-gray-100 p-4 rounded-lg cursor-pointer transition-colors duration-200">
+                    <input type="radio" name="q13" value="b" class="form-radio text-blue-600 h-5 w-5 focus:ring-2 focus:ring-blue-500 mr-3">
+                    <span>b. IAM Group</span>
+                </label>
+                <label class="block flex items-center bg-gray-50 hover:bg-gray-100 p-4 rounded-lg cursor-pointer transition-colors duration-200">
+                    <input type="radio" name="q13" value="c" class="form-radio text-blue-600 h-5 w-5 focus:ring-2 focus:ring-blue-500 mr-3" data-correct="true">
+                    <span>c. IAM Policy</span>
+                </label>
+                <label class="block flex items-center bg-gray-50 hover:bg-gray-100 p-4 rounded-lg cursor-pointer transition-colors duration-200">
+                    <input type="radio" name="q13" value="d" class="form-radio text-blue-600 h-5 w-5 focus:ring-2 focus:ring-blue-500 mr-3">
+                    <span>d. IAM User</span>
+                </label>
+            </form>
+            <div class="mt-6 flex justify-between items-center">
+                <button onclick="checkAnswer('q13')" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-full transition-all duration-300 transform hover:scale-105 shadow-md">Submit</button>
+                <div id="result-q13" class="text-lg font-bold"></div>
+            </div>
+            <details class="mt-6 p-4 rounded-lg bg-gray-100 border border-gray-200">
+                <summary class="font-semibold text-gray-700 cursor-pointer flex items-center">
+                    <span class="mr-2 transform rotate-0 transition-transform duration-300">▶</span>
+                    <span>Show Answer and Explanation</span>
+                </summary>
+                <div class="mt-4 text-gray-600">
+                    <p class="font-bold">Correct Answer: c</p>
+                    <p class="mt-2">An IAM Policy is a document that defines permissions. It must be attached to an IAM User, Group, or Role to have any effect.</p>
+                </div>
+            </details>
+        </div>
+
+        <!-- Question 14 -->
+        <div id="q14" class="bg-white p-6 sm:p-8 rounded-xl shadow-lg mb-8">
+            <p class="text-lg font-semibold text-gray-700 mb-4">Question 14: A developer needs temporary access keys to interact with AWS services for a few hours. Which IAM feature should be used?</p>
+            <form class="space-y-3">
+                <label class="block flex items-center bg-gray-50 hover:bg-gray-100 p-4 rounded-lg cursor-pointer transition-colors duration-200">
+                    <input type="radio" name="q14" value="a" class="form-radio text-blue-600 h-5 w-5 focus:ring-2 focus:ring-blue-500 mr-3">
+                    <span>a. IAM Users</span>
+                </label>
+                <label class="block flex items-center bg-gray-50 hover:bg-gray-100 p-4 rounded-lg cursor-pointer transition-colors duration-200">
+                    <input type="radio" name="q14" value="b" class="form-radio text-blue-600 h-5 w-5 focus:ring-2 focus:ring-blue-500 mr-3" data-correct="true">
+                    <span>b. IAM Roles</span>
+                </label>
+                <label class="block flex items-center bg-gray-50 hover:bg-gray-100 p-4 rounded-lg cursor-pointer transition-colors duration-200">
+                    <input type="radio" name="q14" value="c" class="form-radio text-blue-600 h-5 w-5 focus:ring-2 focus:ring-blue-500 mr-3">
+                    <span>c. IAM Groups</span>
+                </label>
+                <label class="block flex items-center bg-gray-50 hover:bg-gray-100 p-4 rounded-lg cursor-pointer transition-colors duration-200">
+                    <input type="radio" name="q14" value="d" class="form-radio text-blue-600 h-5 w-5 focus:ring-2 focus:ring-blue-500 mr-3">
+                    <span>d. IAM Policies</span>
+                </label>
+            </form>
+            <div class="mt-6 flex justify-between items-center">
+                <button onclick="checkAnswer('q14')" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-full transition-all duration-300 transform hover:scale-105 shadow-md">Submit</button>
+                <div id="result-q14" class="text-lg font-bold"></div>
+            </div>
+            <details class="mt-6 p-4 rounded-lg bg-gray-100 border border-gray-200">
+                <summary class="font-semibold text-gray-700 cursor-pointer flex items-center">
+                    <span class="mr-2 transform rotate-0 transition-transform duration-300">▶</span>
+                    <span>Show Answer and Explanation</span>
+                </summary>
+                <div class="mt-4 text-gray-600">
+                    <p class="font-bold">Correct Answer: b</p>
+                    <p class="mt-2">IAM Roles are a secure way to grant temporary access to users or services. They don't have standard long-term credentials and are ideal for temporary access needs.</p>
+                </div>
+            </details>
+        </div>
+
+        <!-- Question 15 -->
+        <div id="q15" class="bg-white p-6 sm:p-8 rounded-xl shadow-lg mb-8">
+            <p class="text-lg font-semibold text-gray-700 mb-4">Question 15: A company wants to test the resilience of their AWS applications by simulating cyberattacks. What is this process called?</p>
+            <form class="space-y-3">
+                <label class="block flex items-center bg-gray-50 hover:bg-gray-100 p-4 rounded-lg cursor-pointer transition-colors duration-200">
+                    <input type="radio" name="q15" value="a" class="form-radio text-blue-600 h-5 w-5 focus:ring-2 focus:ring-blue-500 mr-3" data-correct="true">
+                    <span>a. Penetration Testing</span>
+                </label>
+                <label class="block flex items-center bg-gray-50 hover:bg-gray-100 p-4 rounded-lg cursor-pointer transition-colors duration-200">
+                    <input type="radio" name="q15" value="b" class="form-radio text-blue-600 h-5 w-5 focus:ring-2 focus:ring-blue-500 mr-3">
+                    <span>b. Intrusion Prevention</span>
+                </label>
+                <label class="block flex items-center bg-gray-50 hover:bg-gray-100 p-4 rounded-lg cursor-pointer transition-colors duration-200">
+                    <input type="radio" name="q15" value="c" class="form-radio text-blue-600 h-5 w-5 focus:ring-2 focus:ring-blue-500 mr-3">
+                    <span>c. Security Patching</span>
+                </label>
+                <label class="block flex items-center bg-gray-50 hover:bg-gray-100 p-4 rounded-lg cursor-pointer transition-colors duration-200">
+                    <input type="radio" name="q15" value="d" class="form-radio text-blue-600 h-5 w-5 focus:ring-2 focus:ring-blue-500 mr-3">
+                    <span>d. GuardDuty Analysis</span>
+                </label>
+            </form>
+            <div class="mt-6 flex justify-between items-center">
+                <button onclick="checkAnswer('q15')" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-full transition-all duration-300 transform hover:scale-105 shadow-md">Submit</button>
+                <div id="result-q15" class="text-lg font-bold"></div>
+            </div>
+            <details class="mt-6 p-4 rounded-lg bg-gray-100 border border-gray-200">
+                <summary class="font-semibold text-gray-700 cursor-pointer flex items-center">
+                    <span class="mr-2 transform rotate-0 transition-transform duration-300">▶</span>
+                    <span>Show Answer and Explanation</span>
+                </summary>
+                <div class="mt-4 text-gray-600">
+                    <p class="font-bold">Correct Answer: a</p>
+                    <p class="mt-2">Penetration testing is the practice of testing a computer system, network or web application to find security vulnerabilities that an attacker could exploit.</p>
+                </div>
+            </details>
+        </div>
+
+        <!-- Question 16 -->
+        <div id="q16" class="bg-white p-6 sm:p-8 rounded-xl shadow-lg mb-8">
+            <p class="text-lg font-semibold text-gray-700 mb-4">Question 16: A company wants to automatically restart an EC2 instance when CPU utilisation is below 5% for 30 minutes. Which CloudWatch feature should they use?</p>
+            <form class="space-y-3">
+                <label class="block flex items-center bg-gray-50 hover:bg-gray-100 p-4 rounded-lg cursor-pointer transition-colors duration-200">
+                    <input type="radio" name="q16" value="a" class="form-radio text-blue-600 h-5 w-5 focus:ring-2 focus:ring-blue-500 mr-3">
+                    <span>a. CloudWatch Dashboards</span>
+                </label>
+                <label class="block flex items-center bg-gray-50 hover:bg-gray-100 p-4 rounded-lg cursor-pointer transition-colors duration-200">
+                    <input type="radio" name="q16" value="b" class="form-radio text-blue-600 h-5 w-5 focus:ring-2 focus:ring-blue-500 mr-3" data-correct="true">
+                    <span>b. CloudWatch Alarms</span>
+                </label>
+                <label class="block flex items-center bg-gray-50 hover:bg-gray-100 p-4 rounded-lg cursor-pointer transition-colors duration-200">
+                    <input type="radio" name="q16" value="c" class="form-radio text-blue-600 h-5 w-5 focus:ring-2 focus:ring-blue-500 mr-3">
+                    <span>c. CloudTrail Events</span>
+                </label>
+                <label class="block flex items-center bg-gray-50 hover:bg-gray-100 p-4 rounded-lg cursor-pointer transition-colors duration-200">
+                    <input type="radio" name="q16" value="d" class="form-radio text-blue-600 h-5 w-5 focus:ring-2 focus:ring-blue-500 mr-3">
+                    <span>d. CloudWatch Logs</span>
+                </label>
+            </form>
+            <div class="mt-6 flex justify-between items-center">
+                <button onclick="checkAnswer('q16')" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-full transition-all duration-300 transform hover:scale-105 shadow-md">Submit</button>
+                <div id="result-q16" class="text-lg font-bold"></div>
+            </div>
+            <details class="mt-6 p-4 rounded-lg bg-gray-100 border border-gray-200">
+                <summary class="font-semibold text-gray-700 cursor-pointer flex items-center">
+                    <span class="mr-2 transform rotate-0 transition-transform duration-300">▶</span>
+                    <span>Show Answer and Explanation</span>
+                </summary>
+                <div class="mt-4 text-gray-600">
+                    <p class="font-bold">Correct Answer: b</p>
+                    <p class="mt-2">CloudWatch Alarms watch a single metric and perform an action when the metric enters a state based on a defined threshold. This can be used to restart, stop, or terminate an EC2 instance.</p>
+                </div>
+            </details>
+        </div>
+
+        <!-- Question 17 -->
+        <div id="q17" class="bg-white p-6 sm:p-8 rounded-xl shadow-lg mb-8">
+            <p class="text-lg font-semibold text-gray-700 mb-4">Question 17: A compliance team wants to ensure EC2 instances are following security best practices. Which service provides automated security assessments?</p>
+            <form class="space-y-3">
+                <label class="block flex items-center bg-gray-50 hover:bg-gray-100 p-4 rounded-lg cursor-pointer transition-colors duration-200">
+                    <input type="radio" name="q17" value="a" class="form-radio text-blue-600 h-5 w-5 focus:ring-2 focus:ring-blue-500 mr-3">
+                    <span>a. Amazon CloudWatch</span>
+                </label>
+                <label class="block flex items-center bg-gray-50 hover:bg-gray-100 p-4 rounded-lg cursor-pointer transition-colors duration-200">
+                    <input type="radio" name="q17" value="b" class="form-radio text-blue-600 h-5 w-5 focus:ring-2 focus:ring-blue-500 mr-3">
+                    <span>b. Amazon GuardDuty</span>
+                </label>
+                <label class="block flex items-center bg-gray-50 hover:bg-gray-100 p-4 rounded-lg cursor-pointer transition-colors duration-200">
+                    <input type="radio" name="q17" value="c" class="form-radio text-blue-600 h-5 w-5 focus:ring-2 focus:ring-blue-500 mr-3" data-correct="true">
+                    <span>c. Amazon Inspector</span>
+                </label>
+                <label class="block flex items-center bg-gray-50 hover:bg-gray-100 p-4 rounded-lg cursor-pointer transition-colors duration-200">
+                    <input type="radio" name="q17" value="d" class="form-radio text-blue-600 h-5 w-5 focus:ring-2 focus:ring-blue-500 mr-3">
+                    <span>d. AWS Shield</span>
+                </label>
+            </form>
+            <div class="mt-6 flex justify-between items-center">
+                <button onclick="checkAnswer('q17')" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-full transition-all duration-300 transform hover:scale-105 shadow-md">Submit</button>
+                <div id="result-q17" class="text-lg font-bold"></div>
+            </div>
+            <details class="mt-6 p-4 rounded-lg bg-gray-100 border border-gray-200">
+                <summary class="font-semibold text-gray-700 cursor-pointer flex items-center">
+                    <span class="mr-2 transform rotate-0 transition-transform duration-300">▶</span>
+                    <span>Show Answer and Explanation</span>
+                </summary>
+                <div class="mt-4 text-gray-600">
+                    <p class="font-bold">Correct Answer: c</p>
+                    <p class="mt-2">Amazon Inspector is an automated security assessment service that helps improve the security and compliance of applications deployed on AWS.</p>
+                </div>
+            </details>
+        </div>
+
+        <!-- Question 18 -->
+        <div id="q18" class="bg-white p-6 sm:p-8 rounded-xl shadow-lg mb-8">
+            <p class="text-lg font-semibold text-gray-700 mb-4">Question 18: Which two data sources does GuardDuty analyse to detect threats? (Choose 2)</p>
+            <form class="space-y-3">
+                <label class="block flex items-center bg-gray-50 hover:bg-gray-100 p-4 rounded-lg cursor-pointer transition-colors duration-200">
+                    <input type="checkbox" name="q18" value="a" class="form-checkbox text-blue-600 h-5 w-5 rounded-md focus:ring-2 focus:ring-blue-500 mr-3" data-correct="true">
+                    <span>a. CloudTrail Events</span>
+                </label>
+                <label class="block flex items-center bg-gray-50 hover:bg-gray-100 p-4 rounded-lg cursor-pointer transition-colors duration-200">
+                    <input type="checkbox" name="q18" value="b" class="form-checkbox text-blue-600 h-5 w-5 rounded-md focus:ring-2 focus:ring-blue-500 mr-3">
+                    <span>b. CloudWatch Dashboards</span>
+                </label>
+                <label class="block flex items-center bg-gray-50 hover:bg-gray-100 p-4 rounded-lg cursor-pointer transition-colors duration-200">
+                    <input type="checkbox" name="q18" value="c" class="form-checkbox text-blue-600 h-5 w-5 rounded-md focus:ring-2 focus:ring-blue-500 mr-3" data-correct="true">
+                    <span>c. VPC Flow Logs</span>
+                </label>
+                <label class="block flex items-center bg-gray-50 hover:bg-gray-100 p-4 rounded-lg cursor-pointer transition-colors duration-200">
+                    <input type="checkbox" name="q18" value="d" class="form-checkbox text-blue-600 h-5 w-5 rounded-md focus:ring-2 focus:ring-blue-500 mr-3">
+                    <span>d. IAM Policies</span>
+                </label>
+            </form>
+            <div class="mt-6 flex justify-between items-center">
+                <button onclick="checkAnswer('q18')" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-full transition-all duration-300 transform hover:scale-105 shadow-md">Submit</button>
+                <div id="result-q18" class="text-lg font-bold"></div>
+            </div>
+            <details class="mt-6 p-4 rounded-lg bg-gray-100 border border-gray-200">
+                <summary class="font-semibold text-gray-700 cursor-pointer flex items-center">
+                    <span class="mr-2 transform rotate-0 transition-transform duration-300">▶</span>
+                    <span>Show Answer and Explanation</span>
+                </summary>
+                <div class="mt-4 text-gray-600">
+                    <p class="font-bold">Correct Answers: a, c</p>
+                    <p class="mt-2">Amazon GuardDuty analyzes various data sources, including VPC Flow Logs and AWS CloudTrail management events, to identify potential threats.</p>
+                </div>
+            </details>
+        </div>
+
+        <!-- Question 19 -->
+        <div id="q19" class="bg-white p-6 sm:p-8 rounded-xl shadow-lg mb-8">
+            <p class="text-lg font-semibold text-gray-700 mb-4">Question 19: What is the main difference between AWS Shield Standard and Shield Advanced?</p>
+            <form class="space-y-3">
+                <label class="block flex items-center bg-gray-50 hover:bg-gray-100 p-4 rounded-lg cursor-pointer transition-colors duration-200">
+                    <input type="radio" name="q19" value="a" class="form-radio text-blue-600 h-5 w-5 focus:ring-2 focus:ring-blue-500 mr-3">
+                    <span>a. Shield Advanced replaces GuardDuty</span>
+                </label>
+                <label class="block flex items-center bg-gray-50 hover:bg-gray-100 p-4 rounded-lg cursor-pointer transition-colors duration-200">
+                    <input type="radio" name="q19" value="b" class="form-radio text-blue-600 h-5 w-5 focus:ring-2 focus:ring-blue-500 mr-3" data-correct="true">
+                    <span>b. Shield Advanced provides 24/7 DDoS response team access</span>
+                </label>
+                <label class="block flex items-center bg-gray-50 hover:bg-gray-100 p-4 rounded-lg cursor-pointer transition-colors duration-200">
+                    <input type="radio" name="q19" value="c" class="form-radio text-blue-600 h-5 w-5 focus:ring-2 focus:ring-blue-500 mr-3">
+                    <span>c. Shield Standard is paid, Shield Advanced is free</span>
+                </label>
+                <label class="block flex items-center bg-gray-50 hover:bg-gray-100 p-4 rounded-lg cursor-pointer transition-colors duration-200">
+                    <input type="radio" name="q19" value="d" class="form-radio text-blue-600 h-5 w-5 focus:ring-2 focus:ring-blue-500 mr-3">
+                    <span>d. Shield Advanced includes IAM support</span>
+                </label>
+            </form>
+            <div class="mt-6 flex justify-between items-center">
+                <button onclick="checkAnswer('q19')" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-full transition-all duration-300 transform hover:scale-105 shadow-md">Submit</button>
+                <div id="result-q19" class="text-lg font-bold"></div>
+            </div>
+            <details class="mt-6 p-4 rounded-lg bg-gray-100 border border-gray-200">
+                <summary class="font-semibold text-gray-700 cursor-pointer flex items-center">
+                    <span class="mr-2 transform rotate-0 transition-transform duration-300">▶</span>
+                    <span>Show Answer and Explanation</span>
+                </summary>
+                <div class="mt-4 text-gray-600">
+                    <p class="font-bold">Correct Answer: b</p>
+                    <p class="mt-2">AWS Shield Advanced is a paid service that provides enhanced DDoS protection and access to the AWS DDoS Response Team (DRT) for complex DDoS attacks.</p>
+                </div>
+            </details>
+        </div>
+
+        <!-- Question 20 -->
+        <div id="q20" class="bg-white p-6 sm:p-8 rounded-xl shadow-lg mb-8">
+            <p class="text-lg font-semibold text-gray-700 mb-4">Question 20: Which AWS service provides best practice recommendations across cost, security, performance, and fault tolerance?</p>
+            <form class="space-y-3">
+                <label class="block flex items-center bg-gray-50 hover:bg-gray-100 p-4 rounded-lg cursor-pointer transition-colors duration-200">
+                    <input type="radio" name="q20" value="a" class="form-radio text-blue-600 h-5 w-5 focus:ring-2 focus:ring-blue-500 mr-3">
+                    <span>a. Amazon CloudTrail</span>
+                </label>
+                <label class="block flex items-center bg-gray-50 hover:bg-gray-100 p-4 rounded-lg cursor-pointer transition-colors duration-200">
+                    <input type="radio" name="q20" value="b" class="form-radio text-blue-600 h-5 w-5 focus:ring-2 focus:ring-blue-500 mr-3">
+                    <span>b. Amazon GuardDuty</span>
+                </label>
+                <label class="block flex items-center bg-gray-50 hover:bg-gray-100 p-4 rounded-lg cursor-pointer transition-colors duration-200">
+                    <input type="radio" name="q20" value="c" class="form-radio text-blue-600 h-5 w-5 focus:ring-2 focus:ring-blue-500 mr-3">
+                    <span>c. Amazon Inspector</span>
+                </label>
+                <label class="block flex items-center bg-gray-50 hover:bg-gray-100 p-4 rounded-lg cursor-pointer transition-colors duration-200">
+                    <input type="radio" name="q20" value="d" class="form-radio text-blue-600 h-5 w-5 focus:ring-2 focus:ring-blue-500 mr-3" data-correct="true">
+                    <span>d. AWS Trusted Advisor</span>
+                </label>
+            </form>
+            <div class="mt-6 flex justify-between items-center">
+                <button onclick="checkAnswer('q20')" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-full transition-all duration-300 transform hover:scale-105 shadow-md">Submit</button>
+                <div id="result-q20" class="text-lg font-bold"></div>
+            </div>
+            <details class="mt-6 p-4 rounded-lg bg-gray-100 border border-gray-200">
+                <summary class="font-semibold text-gray-700 cursor-pointer flex items-center">
+                    <span class="mr-2 transform rotate-0 transition-transform duration-300">▶</span>
+                    <span>Show Answer and Explanation</span>
+                </summary>
+                <div class="mt-4 text-gray-600">
+                    <p class="font-bold">Correct Answer: d</p>
+                    <p class="mt-2">AWS Trusted Advisor provides recommendations in five categories: Cost Optimization, Performance, Security, Fault Tolerance, and Service Limits.</p>
+                </div>
+            </details>
+        </div>
+        
+        <!-- Question 21 -->
+        <div id="q21" class="bg-white p-6 sm:p-8 rounded-xl shadow-lg mb-8">
+            <p class="text-lg font-semibold text-gray-700 mb-4">Question 21: A company hosting a website on AWS wants automatic protection against DDoS attacks. Which service provides this?</p>
+            <form class="space-y-3">
+                <label class="block flex items-center bg-gray-50 hover:bg-gray-100 p-4 rounded-lg cursor-pointer transition-colors duration-200">
+                    <input type="radio" name="q21" value="a" class="form-radio text-blue-600 h-5 w-5 focus:ring-2 focus:ring-blue-500 mr-3">
+                    <span>a. AWS Inspector</span>
+                </label>
+                <label class="block flex items-center bg-gray-50 hover:bg-gray-100 p-4 rounded-lg cursor-pointer transition-colors duration-200">
+                    <input type="radio" name="q21" value="b" class="form-radio text-blue-600 h-5 w-5 focus:ring-2 focus:ring-blue-500 mr-3" data-correct="true">
+                    <span>b. AWS Shield Standard</span>
+                </label>
+                <label class="block flex items-center bg-gray-50 hover:bg-gray-100 p-4 rounded-lg cursor-pointer transition-colors duration-200">
+                    <input type="radio" name="q21" value="c" class="form-radio text-blue-600 h-5 w-5 focus:ring-2 focus:ring-blue-500 mr-3">
+                    <span>c. AWS GuardDuty</span>
+                </label>
+                <label class="block flex items-center bg-gray-50 hover:bg-gray-100 p-4 rounded-lg cursor-pointer transition-colors duration-200">
+                    <input type="radio" name="q21" value="d" class="form-radio text-blue-600 h-5 w-5 focus:ring-2 focus:ring-blue-500 mr-3">
+                    <span>d. AWS WAF</span>
+                </label>
+            </form>
+            <div class="mt-6 flex justify-between items-center">
+                <button onclick="checkAnswer('q21')" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-full transition-all duration-300 transform hover:scale-105 shadow-md">Submit</button>
+                <div id="result-q21" class="text-lg font-bold"></div>
+            </div>
+            <details class="mt-6 p-4 rounded-lg bg-gray-100 border border-gray-200">
+                <summary class="font-semibold text-gray-700 cursor-pointer flex items-center">
+                    <span class="mr-2 transform rotate-0 transition-transform duration-300">▶</span>
+                    <span>Show Answer and Explanation</span>
+                </summary>
+                <div class="mt-4 text-gray-600">
+                    <p class="font-bold">Correct Answer: b</p>
+                    <p class="mt-2">AWS Shield Standard is a service that provides automatic protection against most common, frequently occurring DDoS attacks without any additional cost to your AWS bill.</p>
+                </div>
+            </details>
+        </div>
+
+        <!-- Question 22 -->
+        <div id="q22" class="bg-white p-6 sm:p-8 rounded-xl shadow-lg mb-8">
+            <p class="text-lg font-semibold text-gray-700 mb-4">Question 22: An organisation wants to perform penetration testing on its AWS resources. What is the correct step before conducting the test?</p>
+            <form class="space-y-3">
+                <label class="block flex items-center bg-gray-50 hover:bg-gray-100 p-4 rounded-lg cursor-pointer transition-colors duration-200">
+                    <input type="radio" name="q22" value="a" class="form-radio text-blue-600 h-5 w-5 focus:ring-2 focus:ring-blue-500 mr-3" data-correct="true">
+                    <span>a. Contact AWS Support for authorisation</span>
+                </label>
+                <label class="block flex items-center bg-gray-50 hover:bg-gray-100 p-4 rounded-lg cursor-pointer transition-colors duration-200">
+                    <input type="radio" name="q22" value="b" class="form-radio text-blue-600 h-5 w-5 focus:ring-2 focus:ring-blue-500 mr-3">
+                    <span>b. Deploy GuardDuty</span>
+                </label>
+                <label class="block flex items-center bg-gray-50 hover:bg-gray-100 p-4 rounded-lg cursor-pointer transition-colors duration-200">
+                    <input type="radio" name="q22" value="c" class="form-radio text-blue-600 h-5 w-5 focus:ring-2 focus:ring-blue-500 mr-3">
+                    <span>c. Disable CloudTrail</span>
+                </label>
+                <label class="block flex items-center bg-gray-50 hover:bg-gray-100 p-4 rounded-lg cursor-pointer transition-colors duration-200">
+                    <input type="radio" name="q22" value="d" class="form-radio text-blue-600 h-5 w-5 focus:ring-2 focus:ring-blue-500 mr-3">
+                    <span>d. Run Trusted Advisor checks</span>
+                </label>
+            </form>
+            <div class="mt-6 flex justify-between items-center">
+                <button onclick="checkAnswer('q22')" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-full transition-all duration-300 transform hover:scale-105 shadow-md">Submit</button>
+                <div id="result-q22" class="text-lg font-bold"></div>
+            </div>
+            <details class="mt-6 p-4 rounded-lg bg-gray-100 border border-gray-200">
+                <summary class="font-semibold text-gray-700 cursor-pointer flex items-center">
+                    <span class="mr-2 transform rotate-0 transition-transform duration-300">▶</span>
+                    <span>Show Answer and Explanation</span>
+                </summary>
+                <div class="mt-4 text-gray-600">
+                    <p class="font-bold">Correct Answer: a</p>
+                    <p class="mt-2">While AWS allows penetration testing on certain services, it is mandatory to submit a penetration testing request to AWS Support beforehand for explicit approval.</p>
+                </div>
+            </details>
+        </div>
+        
+        <!-- Question 23 -->
+        <div id="q23" class="bg-white p-6 sm:p-8 rounded-xl shadow-lg mb-8">
+            <p class="text-lg font-semibold text-gray-700 mb-4">Question 23: Which AWS service automatically scans EC2 instances for software vulnerabilities and missing patches?</p>
+            <form class="space-y-3">
+                <label class="block flex items-center bg-gray-50 hover:bg-gray-100 p-4 rounded-lg cursor-pointer transition-colors duration-200">
+                    <input type="radio" name="q23" value="a" class="form-radio text-blue-600 h-5 w-5 focus:ring-2 focus:ring-blue-500 mr-3" data-correct="true">
+                    <span>a. Amazon Inspector</span>
+                </label>
+                <label class="block flex items-center bg-gray-50 hover:bg-gray-100 p-4 rounded-lg cursor-pointer transition-colors duration-200">
+                    <input type="radio" name="q23" value="b" class="form-radio text-blue-600 h-5 w-5 focus:ring-2 focus:ring-blue-500 mr-3">
+                    <span>b. AWS Trusted Advisor</span>
+                </label>
+                <label class="block flex items-center bg-gray-50 hover:bg-gray-100 p-4 rounded-lg cursor-pointer transition-colors duration-200">
+                    <input type="radio" name="q23" value="c" class="form-radio text-blue-600 h-5 w-5 focus:ring-2 focus:ring-blue-500 mr-3">
+                    <span>c. AWS WAF</span>
+                </label>
+                <label class="block flex items-center bg-gray-50 hover:bg-gray-100 p-4 rounded-lg cursor-pointer transition-colors duration-200">
+                    <input type="radio" name="q23" value="d" class="form-radio text-blue-600 h-5 w-5 focus:ring-2 focus:ring-blue-500 mr-3">
+                    <span>d. AWS Shield</span>
+                </label>
+            </form>
+            <div class="mt-6 flex justify-between items-center">
+                <button onclick="checkAnswer('q23')" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-full transition-all duration-300 transform hover:scale-105 shadow-md">Submit</button>
+                <div id="result-q23" class="text-lg font-bold"></div>
+            </div>
+            <details class="mt-6 p-4 rounded-lg bg-gray-100 border border-gray-200">
+                <summary class="font-semibold text-gray-700 cursor-pointer flex items-center">
+                    <span class="mr-2 transform rotate-0 transition-transform duration-300">▶</span>
+                    <span>Show Answer and Explanation</span>
+                </summary>
+                <div class="mt-4 text-gray-600">
+                    <p class="font-bold">Correct Answer: a</p>
+                    <p class="mt-2">Amazon Inspector is a security assessment service that helps improve the security and compliance of applications deployed on AWS by automatically scanning for known vulnerabilities.</p>
+                </div>
+            </details>
+        </div>
+        
+        <!-- Question 24 -->
+        <div id="q24" class="bg-white p-6 sm:p-8 rounded-xl shadow-lg mb-8">
+            <p class="text-lg font-semibold text-gray-700 mb-4">Question 24: Which two are key benefits of CloudTrail? (Choose 2)</p>
+            <form class="space-y-3">
+                <label class="block flex items-center bg-gray-50 hover:bg-gray-100 p-4 rounded-lg cursor-pointer transition-colors duration-200">
+                    <input type="checkbox" name="q24" value="a" class="form-checkbox text-blue-600 h-5 w-5 rounded-md focus:ring-2 focus:ring-blue-500 mr-3">
+                    <span>a. Real-time malware scanning</span>
+                </label>
+                <label class="block flex items-center bg-gray-50 hover:bg-gray-100 p-4 rounded-lg cursor-pointer transition-colors duration-200">
+                    <input type="checkbox" name="q24" value="b" class="form-checkbox text-blue-600 h-5 w-5 rounded-md focus:ring-2 focus:ring-blue-500 mr-3">
+                    <span>b. Protecting against DDoS attacks</span>
+                </label>
+                <label class="block flex items-center bg-gray-50 hover:bg-gray-100 p-4 rounded-lg cursor-pointer transition-colors duration-200">
+                    <input type="checkbox" name="q24" value="c" class="form-checkbox text-blue-600 h-5 w-5 rounded-md focus:ring-2 focus:ring-blue-500 mr-3" data-correct="true">
+                    <span>c. Compliance and auditing</span>
+                </label>
+                <label class="block flex items-center bg-gray-50 hover:bg-gray-100 p-4 rounded-lg cursor-pointer transition-colors duration-200">
+                    <input type="checkbox" name="q24" value="d" class="form-checkbox text-blue-600 h-5 w-5 rounded-md focus:ring-2 focus:ring-blue-500 mr-3" data-correct="true">
+                    <span>d. Monitoring API activity</span>
+                </label>
+            </form>
+            <div class="mt-6 flex justify-between items-center">
+                <button onclick="checkAnswer('q24')" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-full transition-all duration-300 transform hover:scale-105 shadow-md">Submit</button>
+                <div id="result-q24" class="text-lg font-bold"></div>
+            </div>
+            <details class="mt-6 p-4 rounded-lg bg-gray-100 border border-gray-200">
+                <summary class="font-semibold text-gray-700 cursor-pointer flex items-center">
+                    <span class="mr-2 transform rotate-0 transition-transform duration-300">▶</span>
+                    <span>Show Answer and Explanation</span>
+                </summary>
+                <div class="mt-4 text-gray-600">
+                    <p class="font-bold">Correct Answers: c, d</p>
+                    <p class="mt-2">CloudTrail is a service that enables governance, compliance, operational auditing, and risk auditing of your AWS account. It records API calls and actions, which is crucial for auditing.</p>
+                </div>
+            </details>
+        </div>
+
+        <!-- Question 25 -->
+        <div id="q25" class="bg-white p-6 sm:p-8 rounded-xl shadow-lg mb-8">
+            <p class="text-lg font-semibold text-gray-700 mb-4">Question 25: Your organisation wants to ensure developers follow least privilege principles. Which two IAM features help achieve this? (Choose 2)</p>
+            <form class="space-y-3">
+                <label class="block flex items-center bg-gray-50 hover:bg-gray-100 p-4 rounded-lg cursor-pointer transition-colors duration-200">
+                    <input type="checkbox" name="q25" value="a" class="form-checkbox text-blue-600 h-5 w-5 rounded-md focus:ring-2 focus:ring-blue-500 mr-3" data-correct="true">
+                    <span>a. IAM Access Analyzer</span>
+                </label>
+                <label class="block flex items-center bg-gray-50 hover:bg-gray-100 p-4 rounded-lg cursor-pointer transition-colors duration-200">
+                    <input type="checkbox" name="q25" value="b" class="form-checkbox text-blue-600 h-5 w-5 rounded-md focus:ring-2 focus:ring-blue-500 mr-3" data-correct="true">
+                    <span>b. IAM Policies</span>
+                </label>
+                <label class="block flex items-center bg-gray-50 hover:bg-gray-100 p-4 rounded-lg cursor-pointer transition-colors duration-200">
+                    <input type="checkbox" name="q25" value="c" class="form-checkbox text-blue-600 h-5 w-5 rounded-md focus:ring-2 focus:ring-blue-500 mr-3">
+                    <span>c. Amazon GuardDuty</span>
+                </label>
+                <label class="block flex items-center bg-gray-50 hover:bg-gray-100 p-4 rounded-lg cursor-pointer transition-colors duration-200">
+                    <input type="checkbox" name="q25" value="d" class="form-checkbox text-blue-600 h-5 w-5 rounded-md focus:ring-2 focus:ring-blue-500 mr-3">
+                    <span>d. AWS Shield</span>
+                </label>
+            </form>
+            <div class="mt-6 flex justify-between items-center">
+                <button onclick="checkAnswer('q25')" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-full transition-all duration-300 transform hover:scale-105 shadow-md">Submit</button>
+                <div id="result-q25" class="text-lg font-bold"></div>
+            </div>
+            <details class="mt-6 p-4 rounded-lg bg-gray-100 border border-gray-200">
+                <summary class="font-semibold text-gray-700 cursor-pointer flex items-center">
+                    <span class="mr-2 transform rotate-0 transition-transform duration-300">▶</span>
+                    <span>Show Answer and Explanation</span>
+                </summary>
+                <div class="mt-4 text-gray-600">
+                    <p class="font-bold">Correct Answers: a, b</p>
+                    <p class="mt-2">The principle of least privilege states that an identity should have only the permissions required to perform its job. IAM Policies define these permissions, and IAM Access Analyzer helps ensure they are not overly permissive.</p>
+                </div>
+            </details>
+        </div>
+
+    </div>
+
+    <script>
+        // JavaScript to handle the quiz logic
+        function checkAnswer(questionId) {
+            const form = document.querySelector(`#${questionId} form`);
+            const inputs = form.querySelectorAll('input[type="checkbox"], input[type="radio"]');
+            const resultDiv = document.getElementById(`result-${questionId}`);
+            
+            let userAnswers = [];
+            let correctAnswers = [];
+
+            inputs.forEach(input => {
+                if (input.checked) {
+                    userAnswers.push(input.value);
+                }
+                if (input.dataset.correct === "true") {
+                    correctAnswers.push(input.value);
+                }
+            });
+
+            const isCorrect = userAnswers.length === correctAnswers.length &&
+                              userAnswers.every(val => correctAnswers.includes(val));
+
+            if (isCorrect) {
+                resultDiv.textContent = 'Correct!';
+                resultDiv.classList.add('text-green-600');
+                resultDiv.classList.remove('text-red-600');
+            } else {
+                resultDiv.textContent = 'Incorrect!';
+                resultDiv.classList.add('text-red-600');
+                resultDiv.classList.remove('text-green-600');
+            }
+        }
+
+        // Add a simple animation for the summary icon
+        document.querySelectorAll('details').forEach(detail => {
+            detail.addEventListener('toggle', () => {
+                const icon = detail.querySelector('summary span:first-child');
+                if (detail.open) {
+                    icon.style.transform = 'rotate(90deg)';
+                } else {
+                    icon.style.transform = 'rotate(0deg)';
+                }
+            });
+        });
+
+    </script>
+</body>
+</html>
